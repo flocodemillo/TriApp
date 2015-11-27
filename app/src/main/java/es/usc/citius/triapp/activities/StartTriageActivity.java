@@ -25,6 +25,8 @@ public class StartTriageActivity extends AppCompatActivity implements Discrimina
     @Override
     public void onMethodCallback(int color) {
         Log.v(TAG, "Color: " + color);
+        /*viewPager = (ViewPager) findViewById(R.id.pager);
+        ReportFragment = mAdapter.getItem(4)(ReportFragment).setcolor(color);*/
         // do something
     }
 

@@ -104,6 +104,7 @@ public class DiscriminatorAdapter extends ArrayAdapter<Discriminator>{
                             if (question.getAnswer()) {
                                 ViewPager v = (ViewPager) activity.findViewById(R.id.pager);
                                 mAdapterCallback.onMethodCallback(color);
+                                Manchester.setCurrentLevel(color);
                                 v.setCurrentItem(4);
                             }
 

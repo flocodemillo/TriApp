@@ -101,9 +101,13 @@ public class Manchester {
         currentLevel = current;
     }
 
-    public static String getCurrentLevel() {
-        return workFlow[currentWorkFlow].getLevel(currentLevel).getColor();
+    public static int getCurrentLevel() {
+        return currentLevel;
     }
+
+   /* public static String getCurrentLevel() {
+        return workFlow[currentWorkFlow].getLevel(currentLevel).getColor();
+    }*/
 
     public static int levelStringConverter(String color) {
         switch (color) {

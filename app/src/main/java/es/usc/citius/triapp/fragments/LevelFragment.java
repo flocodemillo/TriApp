@@ -19,6 +19,7 @@ import android.widget.ArrayAdapter;
 import android.widget.CheckBox;
 
 import es.usc.citius.triapp.R;
+import es.usc.citius.triapp.adapters.SlideLevelAdapter;
 import es.usc.citius.triapp.data.Manchester;
 import es.usc.citius.triapp.adapters.DiscriminatorAdapter;
 
@@ -40,7 +41,6 @@ public class LevelFragment extends ListFragment implements DiscriminatorAdapter.
     public void onMethodCallback(int color) {
         this.color = color;
         Log.v(TAG, "Color: " + color);
-        // Esto no se sincroniza
         // do something
     }
 
@@ -55,7 +55,8 @@ public class LevelFragment extends ListFragment implements DiscriminatorAdapter.
         Bundle args = getArguments();
 
         //Primer campo callback
-        setListAdapter(new DiscriminatorAdapter(this, this.getActivity().getBaseContext(), this.getActivity(), (Manchester.getCurrentWorkFlow()).getLevel(args.getInt("color", 0)).getDiscriminators(), args.getInt("color", 0)));
+
+        setListAdapter(new DiscriminatorAdapter((DiscriminatorAdapter.AdapterCallback)this.getActivity(), this.getActivity().getBaseContext(), this.getActivity(), (Manchester.getCurrentWorkFlow()).getLevel(args.getInt("color", 0)).getDiscriminators(), args.getInt("color", 0)));
 
 
 

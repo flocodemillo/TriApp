@@ -7,6 +7,7 @@ import android.support.v4.app.FragmentPagerAdapter;
 
 import android.util.Log;
 
+import es.usc.citius.triapp.R;
 import es.usc.citius.triapp.fragments.LevelFragment;
 import es.usc.citius.triapp.data.Manchester;
 import es.usc.citius.triapp.data.manchester.FlowChart;
