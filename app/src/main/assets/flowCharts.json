@@ -1,0 +1,1154 @@
+[
+  {
+    "ID":1,
+    "Name":"General discriminators ",
+    "RiskLimit": -1,
+    "Description": "",
+    "Level":[
+      {
+        "Color":"Red",
+        "Discriminators": [
+          {"Discriminator":"Airway compromise"},
+          {"Discriminator":"Inadequate breathing"},
+          {"Discriminator":"Exsanguinating haemorrhage"},
+          {"Discriminator":"Shock"},
+          {"Discriminator":"Unresponsive child"},
+          {"Discriminator":"Currently fitting"}
+        ]
+      },
+
+      {
+        "Color":"Orange",
+        "Discriminators": [
+          {"Discriminator":"Uncontrollable major haemorrhage"},
+          {"Discriminator":"New abnormal pulse"},
+          {"Discriminator":"Altered conscious level"},
+          {"Discriminator":"Very hot"},
+          {"Discriminator":"Hot baby"},
+          {"Discriminator":"Cold"},
+          {"Discriminator":"Severe pain"}
+        ]
+      },
+
+      {
+        "Color":"Yellow",
+        "Discriminators": [
+          {"Discriminator":"Uncontrollable minor haemorrhage"},
+          {"Discriminator":"History of unconsciousness"},
+          {"Discriminator":"Hot"},
+          {"Discriminator":"Moderate pain"}
+        ]
+      },
+
+      {
+        "Color":"Green",
+        "Discriminators": [
+          {"Discriminator":"Warmth"},
+          {"Discriminator":"Recent mild pain"},
+          {"Discriminator":"Recent problem"}
+        ]
+      }
+
+    ]
+  },
+  {
+    "ID":2,
+    "Name":"Abdominal pain in children",
+    "RiskLimit": 3,
+    "Description": "This is a presentation defined flow diagram. Children who present with abdominal pain may have a range of pathologies and this chart has been designed to allow them to be accurately prioritised. A number of general discriminators are used including Life threat and Pain. Specific discriminators are included to ensure the children who are actively bleeding, and those who have the signs or symptoms of more severe pathologies such as intussusception, are seen urgently",
+    "Level":[
+      {
+        "Color":"Red",
+        "Discriminators": [
+          {"Discriminator":"Airway Compromise"},
+          {"Discriminator":"Inadequate breathing"},
+          {"Discriminator":"Shock"}
+        ]
+      },
+
+      {
+        "Color":"Orange",
+        "Discriminators": [
+          {"Discriminator":"Vomiting Blood"},
+          {"Discriminator":"Passing fresh or altered blood PR"},
+          {"Discriminator":"Purpura"},
+          {"Discriminator":"Not-blanching rash"},
+          {"Discriminator":"Hot baby"},
+          {"Discriminator":"Very hot"},
+          {"Discriminator":"Severe pain"}
+        ]
+      },
+      {
+        "Color":"Yellow",
+        "Discriminators": [
+          {"Discriminator":"History of acutely vomiting blood"},
+          {"Discriminator":"Black or redcurrant stools"},
+          {"Discriminator":"Persistent vomiting"},
+          {"Discriminator":"Visible abdominal mass"},
+          {"Discriminator":"Inconsolable by parents"},
+          {"Discriminator":"Inappropiate history"},
+          {"Discriminator":"Hot"},
+          {"Discriminator":"Moderate pain"}
+        ]
+      },
+
+      {
+        "Color":"Green",
+        "Discriminators": [
+          {"Discriminator":"Vomiting"},
+          {"Discriminator":"Recent mild pain"},
+          {"Discriminator":"Recent problem"}
+        ]
+      }
+    ]
+  },
+  {
+    "ID":3,
+    "Name":"Abscesess and local infections",
+    "RiskLimit": 3,
+    "Description": "This is a presentation defined flow diagram designed to allow prioritisation of patients who present with a variety of obvious local infections and abscesses. Underlying conditions may vary from life-threatening orbital cellulitis to acneiform spots. A number of general discriminators are used including Life threat, Pain and Temperature. Specific discriminators have been included to allow identification of more urgent conditions such as gas gangrene and septic arthritis",
+    "Level":[
+      {
+        "Color":"Red",
+        "Discriminators": [
+          {"Discriminator":"Airway Compromise"},
+          {"Discriminator":"Inadequate breathing"},
+          {"Discriminator":"Shock"}
+        ]
+      },
+
+      {
+        "Color":"Orange",
+        "Discriminators": [
+          {"Discriminator":"Vomiting Blood"},
+          {"Discriminator":"Passing fresh or altered blood PR"},
+          {"Discriminator":"Purpura"},
+          {"Discriminator":"Not-blanching rash"},
+          {"Discriminator":"Hot baby"},
+          {"Discriminator":"Very hot"},
+          {"Discriminator":"Severe pain"}
+        ]
+      },
+      {
+        "Color":"Yellow",
+        "Discriminators": [
+          {"Discriminator":"History of acutely vomiting blood"},
+          {"Discriminator":"Black or redcurrant stools"},
+          {"Discriminator":"Persistent vomiting"},
+          {"Discriminator":"Visible abdominal mass"},
+          {"Discriminator":"Inconsolable by parents"},
+          {"Discriminator":"Inappropiate history"},
+          {"Discriminator":"Hot"},
+          {"Discriminator":"Moderate pain"}
+        ]
+      },
+
+      {
+        "Color":"Green",
+        "Discriminators": [
+          {"Discriminator":"Vomiting"},
+          {"Discriminator":"Recent mild pain"},
+          {"Discriminator":"Recent problem"}
+        ]
+      }
+    ]
+  },
+  {
+    "ID":4,
+    "Name":"Abused or neglected child",
+    "RiskLimit": 3,
+    "Description": "This is a presentation defined flow diagram designed to allow prioritisation of patients who present with signs of abuse or neglect. This chart is not designed to triage illness or injury but rather to triage children whose presentation is abuse or neglect. If the presentation is physical illness or injury, it would be more appropriate to use different charts. A number of general discriminators are used including Life threat, Conscious level and Pain. Specific discriminators have been included to allow prioritisation of the most urgent cases",
+    "Level":[
+      {
+        "Color":"Red",
+        "Discriminators": [
+          {"Discriminator":"Airway Compromise"},
+          {"Discriminator":"Inadequate breathing"},
+          {"Discriminator":"Shock"}
+        ]
+      },
+
+      {
+        "Color":"Orange",
+        "Discriminators": [
+          {"Discriminator":"Vomiting Blood"},
+          {"Discriminator":"Passing fresh or altered blood PR"},
+          {"Discriminator":"Purpura"},
+          {"Discriminator":"Not-blanching rash"},
+          {"Discriminator":"Hot baby"},
+          {"Discriminator":"Very hot"},
+          {"Discriminator":"Severe pain"}
+        ]
+      },
+      {
+        "Color":"Yellow",
+        "Discriminators": [
+          {"Discriminator":"History of acutely vomiting blood"},
+          {"Discriminator":"Black or redcurrant stools"},
+          {"Discriminator":"Persistent vomiting"},
+          {"Discriminator":"Visible abdominal mass"},
+          {"Discriminator":"Inconsolable by parents"},
+          {"Discriminator":"Inappropiate history"},
+          {"Discriminator":"Hot"},
+          {"Discriminator":"Moderate pain"}
+        ]
+      },
+
+      {
+        "Color":"Green",
+        "Discriminators": [
+          {"Discriminator":"Vomiting"},
+          {"Discriminator":"Recent mild pain"},
+          {"Discriminator":"Recent problem"}
+        ]
+      }
+    ]
+  },
+  {
+    "ID":5,
+    "Name":"Allergy",
+    "RiskLimit": 3,
+    "Description": "This is a presentation defined flow diagram designed to allow prioritisation of patients who present with symptoms and signs that may indicate allergy. Patients with allergic reactions range from those with life-threatening anaphylaxis to those with an itchy insect bite. A number of general discriminators are used including Life threat, Conscious level and Pain. Specific discriminators have been included to allow prioritisation of the most urgent conditions",
+    "Level":[
+      {
+        "Color":"Red",
+        "Discriminators": [
+          {"Discriminator":"Airway Compromise"},
+          {"Discriminator":"Inadequate breathing"},
+          {"Discriminator":"Shock"}
+        ]
+      },
+
+      {
+        "Color":"Orange",
+        "Discriminators": [
+          {"Discriminator":"Vomiting Blood"},
+          {"Discriminator":"Passing fresh or altered blood PR"},
+          {"Discriminator":"Purpura"},
+          {"Discriminator":"Not-blanching rash"},
+          {"Discriminator":"Hot baby"},
+          {"Discriminator":"Very hot"},
+          {"Discriminator":"Severe pain"}
+        ]
+      },
+      {
+        "Color":"Yellow",
+        "Discriminators": [
+          {"Discriminator":"History of acutely vomiting blood"},
+          {"Discriminator":"Black or redcurrant stools"},
+          {"Discriminator":"Persistent vomiting"},
+          {"Discriminator":"Visible abdominal mass"},
+          {"Discriminator":"Inconsolable by parents"},
+          {"Discriminator":"Inappropiate history"},
+          {"Discriminator":"Hot"},
+          {"Discriminator":"Moderate pain"}
+        ]
+      },
+
+      {
+        "Color":"Green",
+        "Discriminators": [
+          {"Discriminator":"Vomiting"},
+          {"Discriminator":"Recent mild pain"},
+          {"Discriminator":"Recent problem"}
+        ]
+      }
+    ]
+  },
+  {
+    "ID":6,
+    "Name":"Apparently drunk",
+    "RiskLimit": 3,
+    "Description": "This is a presentation defined flow diagram. A large number of patients attend for emergency treatment in an apparently drunken state. This chart implicitly recognises that not all these patients are drunk and is designed to ensure accurate identification and prioritisation of patients who are suffering from conditions which make them appear drunk, or from such severe drunkenness that their life is threatened. A number of general discriminators have been used including Life threat, Conscious level in children and Blood glucose level. Specific discriminators have been included to ensure that patients with an inadequate history of alcohol ingestion are seen rapidly and treated. If there is any doubt then the patient should be seen very urgently",
+    "Level":[
+      {
+        "Color":"Red",
+        "Discriminators": [
+          {"Discriminator":"Airway Compromise"},
+          {"Discriminator":"Inadequate breathing"},
+          {"Discriminator":"Shock"}
+        ]
+      },
+
+      {
+        "Color":"Orange",
+        "Discriminators": [
+          {"Discriminator":"Vomiting Blood"},
+          {"Discriminator":"Passing fresh or altered blood PR"},
+          {"Discriminator":"Purpura"},
+          {"Discriminator":"Not-blanching rash"},
+          {"Discriminator":"Hot baby"},
+          {"Discriminator":"Very hot"},
+          {"Discriminator":"Severe pain"}
+        ]
+      },
+      {
+        "Color":"Yellow",
+        "Discriminators": [
+          {"Discriminator":"History of acutely vomiting blood"},
+          {"Discriminator":"Black or redcurrant stools"},
+          {"Discriminator":"Persistent vomiting"},
+          {"Discriminator":"Visible abdominal mass"},
+          {"Discriminator":"Inconsolable by parents"},
+          {"Discriminator":"Inappropiate history"},
+          {"Discriminator":"Hot"},
+          {"Discriminator":"Moderate pain"}
+        ]
+      },
+
+      {
+        "Color":"Green",
+        "Discriminators": [
+          {"Discriminator":"Vomiting"},
+          {"Discriminator":"Recent mild pain"},
+          {"Discriminator":"Recent problem"}
+        ]
+      }
+    ]
+  },
+  {
+    "ID":7,
+    "Name":"Assault",
+    "RiskLimit": 3,
+    "Description": "This is a presentation defined flow diagram. Assault is a common presentation, and patients with non-specific conditions following assault may be triaged using this chart. Patients who have specific injuries are better triaged using the charts that pertain to those injuries. A number of general discriminators are used including Life threat, Haemorrhage and Pain. Specific discriminators are included to identify patients who have a significant history of injury which may indicate a more urgent requirement for treatment",
+    "Level":[
+      {
+        "Color":"Red",
+        "Discriminators": [
+          {"Discriminator":"Airway Compromise"},
+          {"Discriminator":"Inadequate breathing"},
+          {"Discriminator":"Shock"}
+        ]
+      },
+
+      {
+        "Color":"Orange",
+        "Discriminators": [
+          {"Discriminator":"Vomiting Blood"},
+          {"Discriminator":"Passing fresh or altered blood PR"},
+          {"Discriminator":"Purpura"},
+          {"Discriminator":"Not-blanching rash"},
+          {"Discriminator":"Hot baby"},
+          {"Discriminator":"Very hot"},
+          {"Discriminator":"Severe pain"}
+        ]
+      },
+      {
+        "Color":"Yellow",
+        "Discriminators": [
+          {"Discriminator":"History of acutely vomiting blood"},
+          {"Discriminator":"Black or redcurrant stools"},
+          {"Discriminator":"Persistent vomiting"},
+          {"Discriminator":"Visible abdominal mass"},
+          {"Discriminator":"Inconsolable by parents"},
+          {"Discriminator":"Inappropiate history"},
+          {"Discriminator":"Hot"},
+          {"Discriminator":"Moderate pain"}
+        ]
+      },
+
+      {
+        "Color":"Green",
+        "Discriminators": [
+          {"Discriminator":"Vomiting"},
+          {"Discriminator":"Recent mild pain"},
+          {"Discriminator":"Recent problem"}
+        ]
+      }
+    ]
+  },
+  {
+    "ID":8,
+    "Name":"Asthma",
+    "RiskLimit": 3,
+    "Description": "This is a presentation defined flow diagram which is intended for use in patients who present with the symptoms and signs of known asthma. The severity of asthmatic patients at presentation varies from those whose lives are threatened to those requiring a repeat prescription of inhalers. A number of general discriminators are used including Life threat, Conscious level (in adults and children) and Oxygen saturation. Specific discriminators are included to indicate those signs and symptoms that indicate severe and life-threatening asthma",
+    "Level":[
+      {
+        "Color":"Red",
+        "Discriminators": [
+          {"Discriminator":"Airway Compromise"},
+          {"Discriminator":"Inadequate breathing"},
+          {"Discriminator":"Shock"}
+        ]
+      },
+
+      {
+        "Color":"Orange",
+        "Discriminators": [
+          {"Discriminator":"Vomiting Blood"},
+          {"Discriminator":"Passing fresh or altered blood PR"},
+          {"Discriminator":"Purpura"},
+          {"Discriminator":"Not-blanching rash"},
+          {"Discriminator":"Hot baby"},
+          {"Discriminator":"Very hot"},
+          {"Discriminator":"Severe pain"}
+        ]
+      },
+      {
+        "Color":"Yellow",
+        "Discriminators": [
+          {"Discriminator":"History of acutely vomiting blood"},
+          {"Discriminator":"Black or redcurrant stools"},
+          {"Discriminator":"Persistent vomiting"},
+          {"Discriminator":"Visible abdominal mass"},
+          {"Discriminator":"Inconsolable by parents"},
+          {"Discriminator":"Inappropiate history"},
+          {"Discriminator":"Hot"},
+          {"Discriminator":"Moderate pain"}
+        ]
+      },
+
+      {
+        "Color":"Green",
+        "Discriminators": [
+          {"Discriminator":"Vomiting"},
+          {"Discriminator":"Recent mild pain"},
+          {"Discriminator":"Recent problem"}
+        ]
+      }
+    ]
+  },
+  {
+    "ID":9,
+    "Name":"Back pain",
+    "RiskLimit": 3,
+    "Description": "This is a presentation defined flow diagram. Back pain may present to the Emergency Department either as an acute event or as an acute exacerbation of a chronic problem. A number of general discriminators are used including Life threat, Pain and Temperature. Specific discriminators have been selected in order to allow for appropriate categorisation of more urgent problems. In particular, discriminators are included to allow appropriate classification of abdominal aneurysm and patients with neurological signs and symptoms following disc prolapse",
+    "Level":[
+      {
+        "Color":"Red",
+        "Discriminators": [
+          {"Discriminator":"Airway Compromise"},
+          {"Discriminator":"Inadequate breathing"},
+          {"Discriminator":"Shock"}
+        ]
+      },
+
+      {
+        "Color":"Orange",
+        "Discriminators": [
+          {"Discriminator":"Vomiting Blood"},
+          {"Discriminator":"Passing fresh or altered blood PR"},
+          {"Discriminator":"Purpura"},
+          {"Discriminator":"Not-blanching rash"},
+          {"Discriminator":"Hot baby"},
+          {"Discriminator":"Very hot"},
+          {"Discriminator":"Severe pain"}
+        ]
+      },
+      {
+        "Color":"Yellow",
+        "Discriminators": [
+          {"Discriminator":"History of acutely vomiting blood"},
+          {"Discriminator":"Black or redcurrant stools"},
+          {"Discriminator":"Persistent vomiting"},
+          {"Discriminator":"Visible abdominal mass"},
+          {"Discriminator":"Inconsolable by parents"},
+          {"Discriminator":"Inappropiate history"},
+          {"Discriminator":"Hot"},
+          {"Discriminator":"Moderate pain"}
+        ]
+      },
+
+      {
+        "Color":"Green",
+        "Discriminators": [
+          {"Discriminator":"Vomiting"},
+          {"Discriminator":"Recent mild pain"},
+          {"Discriminator":"Recent problem"}
+        ]
+      }
+    ]
+  },
+  {
+    "ID":10,
+    "Name":"Behaving strangely",
+    "RiskLimit": 3,
+    "Description": "This is a presentation defined flow diagram. Patients who are behaving strangely may have either a psychiatric or a physical cause for their presentation. This chart is designed to allow the accurate prioritisation of both these groups of patients. A number of general discriminators have been used including Life threat and Conscious level. Specific discriminators are used and in particular the concepts of risk of harm to others and risks of self-harm are introduced",
+    "Level":[
+      {
+        "Color":"Red",
+        "Discriminators": [
+          {"Discriminator":"Airway Compromise"},
+          {"Discriminator":"Inadequate breathing"},
+          {"Discriminator":"Shock"}
+        ]
+      },
+
+      {
+        "Color":"Orange",
+        "Discriminators": [
+          {"Discriminator":"Vomiting Blood"},
+          {"Discriminator":"Passing fresh or altered blood PR"},
+          {"Discriminator":"Purpura"},
+          {"Discriminator":"Not-blanching rash"},
+          {"Discriminator":"Hot baby"},
+          {"Discriminator":"Very hot"},
+          {"Discriminator":"Severe pain"}
+        ]
+      },
+      {
+        "Color":"Yellow",
+        "Discriminators": [
+          {"Discriminator":"History of acutely vomiting blood"},
+          {"Discriminator":"Black or redcurrant stools"},
+          {"Discriminator":"Persistent vomiting"},
+          {"Discriminator":"Visible abdominal mass"},
+          {"Discriminator":"Inconsolable by parents"},
+          {"Discriminator":"Inappropiate history"},
+          {"Discriminator":"Hot"},
+          {"Discriminator":"Moderate pain"}
+        ]
+      },
+
+      {
+        "Color":"Green",
+        "Discriminators": [
+          {"Discriminator":"Vomiting"},
+          {"Discriminator":"Recent mild pain"},
+          {"Discriminator":"Recent problem"}
+        ]
+      }
+    ]
+  },
+  {
+    "ID":11,
+    "Name":"Bites and stings",
+    "RiskLimit": 3,
+    "Description": "This is a presentation defined flow diagram designed to allow accurate prioritisation of patients who present following bites and stings. Bites may, of course, range from those delivered by insects to those delivered by large animals; therefore, there is a complete range of priority covered by this presentation. A number of general discriminators are used including Life threat, Haemorrhage and Pain. Specific discriminators have been added to the chart to allow accurate identification of patients requiring more urgent treatment because of more severe injury or the development of allergic reactions",
+    "Level":[
+      {
+        "Color":"Red",
+        "Discriminators": [
+          {"Discriminator":"Airway Compromise"},
+          {"Discriminator":"Inadequate breathing"},
+          {"Discriminator":"Shock"}
+        ]
+      },
+
+      {
+        "Color":"Orange",
+        "Discriminators": [
+          {"Discriminator":"Vomiting Blood"},
+          {"Discriminator":"Passing fresh or altered blood PR"},
+          {"Discriminator":"Purpura"},
+          {"Discriminator":"Not-blanching rash"},
+          {"Discriminator":"Hot baby"},
+          {"Discriminator":"Very hot"},
+          {"Discriminator":"Severe pain"}
+        ]
+      },
+      {
+        "Color":"Yellow",
+        "Discriminators": [
+          {"Discriminator":"History of acutely vomiting blood"},
+          {"Discriminator":"Black or redcurrant stools"},
+          {"Discriminator":"Persistent vomiting"},
+          {"Discriminator":"Visible abdominal mass"},
+          {"Discriminator":"Inconsolable by parents"},
+          {"Discriminator":"Inappropiate history"},
+          {"Discriminator":"Hot"},
+          {"Discriminator":"Moderate pain"}
+        ]
+      },
+
+      {
+        "Color":"Green",
+        "Discriminators": [
+          {"Discriminator":"Vomiting"},
+          {"Discriminator":"Recent mild pain"},
+          {"Discriminator":"Recent problem"}
+        ]
+      }
+    ]
+  },
+  {
+    "ID":12,
+    "Name":"Burns and scalds",
+    "RiskLimit": 3,
+    "Description": "This is a presentation defined flow diagram. There is a complete range of severity with this presentation and the chart has been designed to allow accurate identification of patients within each category. A number of general discriminators are used including Life threat, Conscious level and Pain. Specific discriminators have been added to allow identification of patients who have suffered inhalation injury, and those in whom the mechanism suggests that further investigation and treatment may be appropriate",
+    "Level":[
+      {
+        "Color":"Red",
+        "Discriminators": [
+          {"Discriminator":"Airway Compromise"},
+          {"Discriminator":"Inadequate breathing"},
+          {"Discriminator":"Shock"}
+        ]
+      },
+
+      {
+        "Color":"Orange",
+        "Discriminators": [
+          {"Discriminator":"Vomiting Blood"},
+          {"Discriminator":"Passing fresh or altered blood PR"},
+          {"Discriminator":"Purpura"},
+          {"Discriminator":"Not-blanching rash"},
+          {"Discriminator":"Hot baby"},
+          {"Discriminator":"Very hot"},
+          {"Discriminator":"Severe pain"}
+        ]
+      },
+      {
+        "Color":"Yellow",
+        "Discriminators": [
+          {"Discriminator":"History of acutely vomiting blood"},
+          {"Discriminator":"Black or redcurrant stools"},
+          {"Discriminator":"Persistent vomiting"},
+          {"Discriminator":"Visible abdominal mass"},
+          {"Discriminator":"Inconsolable by parents"},
+          {"Discriminator":"Inappropiate history"},
+          {"Discriminator":"Hot"},
+          {"Discriminator":"Moderate pain"}
+        ]
+      },
+
+      {
+        "Color":"Green",
+        "Discriminators": [
+          {"Discriminator":"Vomiting"},
+          {"Discriminator":"Recent mild pain"},
+          {"Discriminator":"Recent problem"}
+        ]
+      }
+    ]
+  },
+  {
+    "ID":13,
+    "Name":"Chemical exposure",
+    "RiskLimit": 3,
+    "Description": "This is a presentation defined flow diagram. While this presentation is not common it is important because it is often the chief complaint of the patient. The signs and symptoms do not necessarily fit easily into any other presentational group. A number of general discriminators are used including Life threat, Conscious level, Pain and Oxygen saturation. Specific discriminators, which include those for the shortness of breath, have been added to appropriate categories. Acute chemical eye injury appears in the RED category and Risk of continued contamination appears in the ORANGE",
+    "Level":[
+      {
+        "Color":"Red",
+        "Discriminators": [
+          {"Discriminator":"Airway Compromise"},
+          {"Discriminator":"Inadequate breathing"},
+          {"Discriminator":"Shock"}
+        ]
+      },
+
+      {
+        "Color":"Orange",
+        "Discriminators": [
+          {"Discriminator":"Vomiting Blood"},
+          {"Discriminator":"Passing fresh or altered blood PR"},
+          {"Discriminator":"Purpura"},
+          {"Discriminator":"Not-blanching rash"},
+          {"Discriminator":"Hot baby"},
+          {"Discriminator":"Very hot"},
+          {"Discriminator":"Severe pain"}
+        ]
+      },
+      {
+        "Color":"Yellow",
+        "Discriminators": [
+          {"Discriminator":"History of acutely vomiting blood"},
+          {"Discriminator":"Black or redcurrant stools"},
+          {"Discriminator":"Persistent vomiting"},
+          {"Discriminator":"Visible abdominal mass"},
+          {"Discriminator":"Inconsolable by parents"},
+          {"Discriminator":"Inappropiate history"},
+          {"Discriminator":"Hot"},
+          {"Discriminator":"Moderate pain"}
+        ]
+      },
+
+      {
+        "Color":"Green",
+        "Discriminators": [
+          {"Discriminator":"Vomiting"},
+          {"Discriminator":"Recent mild pain"},
+          {"Discriminator":"Recent problem"}
+        ]
+      }
+    ]
+  },
+  {
+    "ID":14,
+    "Name":"Chest pain",
+    "RiskLimit": 3,
+    "Description": "This is a presentation defined flow diagram. Chest pain is a common presentation to Emergency Departments, forming some 2–5% of all patient contacts. Causes of chest pain may vary from acute myocardial infraction to muscular irritation, and appropriate categorisation is paramount. A number of general discriminators are used including Life threat and Pain. Specific discriminators include the nature and severity of pain (cardiac or pleuritic) and abnormalities of pulse",
+    "Level":[
+      {
+        "Color":"Red",
+        "Discriminators": [
+          {"Discriminator":"Airway Compromise"},
+          {"Discriminator":"Inadequate breathing"},
+          {"Discriminator":"Shock"}
+        ]
+      },
+
+      {
+        "Color":"Orange",
+        "Discriminators": [
+          {"Discriminator":"Vomiting Blood"},
+          {"Discriminator":"Passing fresh or altered blood PR"},
+          {"Discriminator":"Purpura"},
+          {"Discriminator":"Not-blanching rash"},
+          {"Discriminator":"Hot baby"},
+          {"Discriminator":"Very hot"},
+          {"Discriminator":"Severe pain"}
+        ]
+      },
+      {
+        "Color":"Yellow",
+        "Discriminators": [
+          {"Discriminator":"History of acutely vomiting blood"},
+          {"Discriminator":"Black or redcurrant stools"},
+          {"Discriminator":"Persistent vomiting"},
+          {"Discriminator":"Visible abdominal mass"},
+          {"Discriminator":"Inconsolable by parents"},
+          {"Discriminator":"Inappropiate history"},
+          {"Discriminator":"Hot"},
+          {"Discriminator":"Moderate pain"}
+        ]
+      },
+
+      {
+        "Color":"Green",
+        "Discriminators": [
+          {"Discriminator":"Vomiting"},
+          {"Discriminator":"Recent mild pain"},
+          {"Discriminator":"Recent problem"}
+        ]
+      }
+    ]
+  },
+  {
+    "ID":15,
+    "Name":"Crying baby",
+    "RiskLimit": 3,
+    "Description": "This is a presentation defined flow diagram. This chart has been designed to allow accurate prioritisation of children who are presented by their parents with a chief complaint of crying. A number of general discriminators have been used including Life threat, Conscious level and Pain. Specific discriminators include those that allow recognition of more specific pathologies such as septicaemia, or that indicate that a more serious pathology might exist The risk limit sits between ORANGE and YELLOW and therefore no children can be categorised as YELLOW, GREEN or BLUE until all the specific and general discriminators outlined under the RED and ORANGE categories have been specifically excluded. This may take longer than the time available for initial assessment",
+    "Level":[
+      {
+        "Color":"Red",
+        "Discriminators": [
+          {"Discriminator":"Airway Compromise"},
+          {"Discriminator":"Inadequate breathing"},
+          {"Discriminator":"Shock"}
+        ]
+      },
+
+      {
+        "Color":"Orange",
+        "Discriminators": [
+          {"Discriminator":"Vomiting Blood"},
+          {"Discriminator":"Passing fresh or altered blood PR"},
+          {"Discriminator":"Purpura"},
+          {"Discriminator":"Not-blanching rash"},
+          {"Discriminator":"Hot baby"},
+          {"Discriminator":"Very hot"},
+          {"Discriminator":"Severe pain"}
+        ]
+      },
+      {
+        "Color":"Yellow",
+        "Discriminators": [
+          {"Discriminator":"History of acutely vomiting blood"},
+          {"Discriminator":"Black or redcurrant stools"},
+          {"Discriminator":"Persistent vomiting"},
+          {"Discriminator":"Visible abdominal mass"},
+          {"Discriminator":"Inconsolable by parents"},
+          {"Discriminator":"Inappropiate history"},
+          {"Discriminator":"Hot"},
+          {"Discriminator":"Moderate pain"}
+        ]
+      },
+
+      {
+        "Color":"Green",
+        "Discriminators": [
+          {"Discriminator":"Vomiting"},
+          {"Discriminator":"Recent mild pain"},
+          {"Discriminator":"Recent problem"}
+        ]
+      }
+    ]
+  },
+  {
+    "ID":16,
+    "Name":"Dental problems",
+    "RiskLimit": 3,
+    "Description": "This is a presentation defined flow diagram designed to allow accurate prioritisation of patients presenting problems affecting the teeth or gums. A number of general discriminators have been used including Life threat, Pain, Haemorrhage and Temperature. Acute avulsion of a tooth has been included in the urgent (YELLOW) category since speed of reimplantation affects outcome. It is important to ensure that preconceptions about disposal do not affect accurate triage of patients with these presentations",
+    "Level":[
+      {
+        "Color":"Red",
+        "Discriminators": [
+          {"Discriminator":"Airway Compromise"},
+          {"Discriminator":"Inadequate breathing"},
+          {"Discriminator":"Shock"}
+        ]
+      },
+
+      {
+        "Color":"Orange",
+        "Discriminators": [
+          {"Discriminator":"Vomiting Blood"},
+          {"Discriminator":"Passing fresh or altered blood PR"},
+          {"Discriminator":"Purpura"},
+          {"Discriminator":"Not-blanching rash"},
+          {"Discriminator":"Hot baby"},
+          {"Discriminator":"Very hot"},
+          {"Discriminator":"Severe pain"}
+        ]
+      },
+      {
+        "Color":"Yellow",
+        "Discriminators": [
+          {"Discriminator":"History of acutely vomiting blood"},
+          {"Discriminator":"Black or redcurrant stools"},
+          {"Discriminator":"Persistent vomiting"},
+          {"Discriminator":"Visible abdominal mass"},
+          {"Discriminator":"Inconsolable by parents"},
+          {"Discriminator":"Inappropiate history"},
+          {"Discriminator":"Hot"},
+          {"Discriminator":"Moderate pain"}
+        ]
+      },
+
+      {
+        "Color":"Green",
+        "Discriminators": [
+          {"Discriminator":"Vomiting"},
+          {"Discriminator":"Recent mild pain"},
+          {"Discriminator":"Recent problem"}
+        ]
+      }
+    ]
+  },
+  {
+    "ID":17,
+    "Name":"Diabetes",
+    "RiskLimit": 3,
+    "Description": "This is a presentation defined flow diagram designed to allow categorisation of patients who present with known cases of diabetes. A number of general discriminators are used including Life threat, Conscious level (both adult and child), Blood glucose level and Temperature",
+    "Level":[
+      {
+        "Color":"Red",
+        "Discriminators": [
+          {"Discriminator":"Airway Compromise"},
+          {"Discriminator":"Inadequate breathing"},
+          {"Discriminator":"Shock"}
+        ]
+      },
+
+      {
+        "Color":"Orange",
+        "Discriminators": [
+          {"Discriminator":"Vomiting Blood"},
+          {"Discriminator":"Passing fresh or altered blood PR"},
+          {"Discriminator":"Purpura"},
+          {"Discriminator":"Not-blanching rash"},
+          {"Discriminator":"Hot baby"},
+          {"Discriminator":"Very hot"},
+          {"Discriminator":"Severe pain"}
+        ]
+      },
+      {
+        "Color":"Yellow",
+        "Discriminators": [
+          {"Discriminator":"History of acutely vomiting blood"},
+          {"Discriminator":"Black or redcurrant stools"},
+          {"Discriminator":"Persistent vomiting"},
+          {"Discriminator":"Visible abdominal mass"},
+          {"Discriminator":"Inconsolable by parents"},
+          {"Discriminator":"Inappropiate history"},
+          {"Discriminator":"Hot"},
+          {"Discriminator":"Moderate pain"}
+        ]
+      },
+
+      {
+        "Color":"Green",
+        "Discriminators": [
+          {"Discriminator":"Vomiting"},
+          {"Discriminator":"Recent mild pain"},
+          {"Discriminator":"Recent problem"}
+        ]
+      }
+    ]
+  },
+  {
+    "ID":18,
+    "Name":"Diarrhoea and vomiting",
+    "RiskLimit": 3,
+    "Description": "This is a presentation defined flow diagram designed to allow categorisation of patients who present with diarrhoea and/or vomiting. Most patients who present with diarrhoea or vomiting do not have high priority. However, a number may have serious underlying pathology. A number of general discriminators are used including Life threat and Pain. Specific discriminators have been included to ensure that patients suffering from GI bleeding, and those with dehydration and other severe effects of diarrhoea and vomiting, are included in the appropriate categories",
+    "Level":[
+      {
+        "Color":"Red",
+        "Discriminators": [
+          {"Discriminator":"Airway Compromise"},
+          {"Discriminator":"Inadequate breathing"},
+          {"Discriminator":"Shock"}
+        ]
+      },
+
+      {
+        "Color":"Orange",
+        "Discriminators": [
+          {"Discriminator":"Vomiting Blood"},
+          {"Discriminator":"Passing fresh or altered blood PR"},
+          {"Discriminator":"Purpura"},
+          {"Discriminator":"Not-blanching rash"},
+          {"Discriminator":"Hot baby"},
+          {"Discriminator":"Very hot"},
+          {"Discriminator":"Severe pain"}
+        ]
+      },
+      {
+        "Color":"Yellow",
+        "Discriminators": [
+          {"Discriminator":"History of acutely vomiting blood"},
+          {"Discriminator":"Black or redcurrant stools"},
+          {"Discriminator":"Persistent vomiting"},
+          {"Discriminator":"Visible abdominal mass"},
+          {"Discriminator":"Inconsolable by parents"},
+          {"Discriminator":"Inappropiate history"},
+          {"Discriminator":"Hot"},
+          {"Discriminator":"Moderate pain"}
+        ]
+      },
+
+      {
+        "Color":"Green",
+        "Discriminators": [
+          {"Discriminator":"Vomiting"},
+          {"Discriminator":"Recent mild pain"},
+          {"Discriminator":"Recent problem"}
+        ]
+      }
+    ]
+  },
+  {
+    "ID":19,
+    "Name":"Ear problems",
+    "RiskLimit": 3,
+    "Description": "This is a presentation defined flow diagram designed to allow accurate prioritisation of patients presenting with conditions affecting the ear. A number of general discriminators are used including Life threat, Pain, Haemorrhage and Temperature",
+    "Level":[
+      {
+        "Color":"Red",
+        "Discriminators": [
+          {"Discriminator":"Airway Compromise"},
+          {"Discriminator":"Inadequate breathing"},
+          {"Discriminator":"Shock"}
+        ]
+      },
+
+      {
+        "Color":"Orange",
+        "Discriminators": [
+          {"Discriminator":"Vomiting Blood"},
+          {"Discriminator":"Passing fresh or altered blood PR"},
+          {"Discriminator":"Purpura"},
+          {"Discriminator":"Not-blanching rash"},
+          {"Discriminator":"Hot baby"},
+          {"Discriminator":"Very hot"},
+          {"Discriminator":"Severe pain"}
+        ]
+      },
+      {
+        "Color":"Yellow",
+        "Discriminators": [
+          {"Discriminator":"History of acutely vomiting blood"},
+          {"Discriminator":"Black or redcurrant stools"},
+          {"Discriminator":"Persistent vomiting"},
+          {"Discriminator":"Visible abdominal mass"},
+          {"Discriminator":"Inconsolable by parents"},
+          {"Discriminator":"Inappropiate history"},
+          {"Discriminator":"Hot"},
+          {"Discriminator":"Moderate pain"}
+        ]
+      },
+
+      {
+        "Color":"Green",
+        "Discriminators": [
+          {"Discriminator":"Vomiting"},
+          {"Discriminator":"Recent mild pain"},
+          {"Discriminator":"Recent problem"}
+        ]
+      }
+    ]
+  },
+  {
+    "ID":20,
+    "Name":"Eye problems",
+    "RiskLimit": 3,
+    "Description": "This is a presentation defined flow diagram designed to allow accurate prioritisation of patients attending with conditions affecting the eye. Pain is used as a general discriminator. A number of specific discriminators have been used including a history of Acute chemical injury, which indicates that immediate action is required, a history of Penetrating eye injury or sudden or Acute complete loss of vision and an assessment of visual acuity",
+    "Level":[
+      {
+        "Color":"Red",
+        "Discriminators": [
+          {"Discriminator":"Airway Compromise"},
+          {"Discriminator":"Inadequate breathing"},
+          {"Discriminator":"Shock"}
+        ]
+      },
+
+      {
+        "Color":"Orange",
+        "Discriminators": [
+          {"Discriminator":"Vomiting Blood"},
+          {"Discriminator":"Passing fresh or altered blood PR"},
+          {"Discriminator":"Purpura"},
+          {"Discriminator":"Not-blanching rash"},
+          {"Discriminator":"Hot baby"},
+          {"Discriminator":"Very hot"},
+          {"Discriminator":"Severe pain"}
+        ]
+      },
+      {
+        "Color":"Yellow",
+        "Discriminators": [
+          {"Discriminator":"History of acutely vomiting blood"},
+          {"Discriminator":"Black or redcurrant stools"},
+          {"Discriminator":"Persistent vomiting"},
+          {"Discriminator":"Visible abdominal mass"},
+          {"Discriminator":"Inconsolable by parents"},
+          {"Discriminator":"Inappropiate history"},
+          {"Discriminator":"Hot"},
+          {"Discriminator":"Moderate pain"}
+        ]
+      },
+
+      {
+        "Color":"Green",
+        "Discriminators": [
+          {"Discriminator":"Vomiting"},
+          {"Discriminator":"Recent mild pain"},
+          {"Discriminator":"Recent problem"}
+        ]
+      }
+    ]
+  },
+  {
+    "ID":21,
+    "Name":"Facial problems",
+    "RiskLimit": 3,
+    "Description": "This presentation defined flow diagram has been designed to allow accurate prioritisation of patients attending with problems affecting the face. A number of general discriminators have been used including Life threat, Haemorrhage and Pain",
+    "Level":[
+      {
+        "Color":"Red",
+        "Discriminators": [
+          {"Discriminator":"Airway Compromise"},
+          {"Discriminator":"Inadequate breathing"},
+          {"Discriminator":"Shock"}
+        ]
+      },
+
+      {
+        "Color":"Orange",
+        "Discriminators": [
+          {"Discriminator":"Vomiting Blood"},
+          {"Discriminator":"Passing fresh or altered blood PR"},
+          {"Discriminator":"Purpura"},
+          {"Discriminator":"Not-blanching rash"},
+          {"Discriminator":"Hot baby"},
+          {"Discriminator":"Very hot"},
+          {"Discriminator":"Severe pain"}
+        ]
+      },
+      {
+        "Color":"Yellow",
+        "Discriminators": [
+          {"Discriminator":"History of acutely vomiting blood"},
+          {"Discriminator":"Black or redcurrant stools"},
+          {"Discriminator":"Persistent vomiting"},
+          {"Discriminator":"Visible abdominal mass"},
+          {"Discriminator":"Inconsolable by parents"},
+          {"Discriminator":"Inappropiate history"},
+          {"Discriminator":"Hot"},
+          {"Discriminator":"Moderate pain"}
+        ]
+      },
+
+      {
+        "Color":"Green",
+        "Discriminators": [
+          {"Discriminator":"Vomiting"},
+          {"Discriminator":"Recent mild pain"},
+          {"Discriminator":"Recent problem"}
+        ]
+      }
+    ]
+  },
+  {
+    "ID":22,
+    "Name":"Falls",
+    "RiskLimit": 3,
+    "Description": "This is a presentation defined flow diagram. Many patients who present with a history of falls have suffered trauma as a result, and their priority will reflect the injuries suffered. Some, however, may have had a serious underlying pathology that caused them to fall, or may have developed complications after falling. This chart is designed to allow accurate prioritisation whether the injury or underlying cause is more pressing. A number of general discriminators have been included to ensure that patients suffering from serious underlying conditions or limb-threatening injuries are given a high priority",
+    "Level":[
+      {
+        "Color":"Red",
+        "Discriminators": [
+          {"Discriminator":"Airway Compromise"},
+          {"Discriminator":"Inadequate breathing"},
+          {"Discriminator":"Shock"}
+        ]
+      },
+
+      {
+        "Color":"Orange",
+        "Discriminators": [
+          {"Discriminator":"Vomiting Blood"},
+          {"Discriminator":"Passing fresh or altered blood PR"},
+          {"Discriminator":"Purpura"},
+          {"Discriminator":"Not-blanching rash"},
+          {"Discriminator":"Hot baby"},
+          {"Discriminator":"Very hot"},
+          {"Discriminator":"Severe pain"}
+        ]
+      },
+      {
+        "Color":"Yellow",
+        "Discriminators": [
+          {"Discriminator":"History of acutely vomiting blood"},
+          {"Discriminator":"Black or redcurrant stools"},
+          {"Discriminator":"Persistent vomiting"},
+          {"Discriminator":"Visible abdominal mass"},
+          {"Discriminator":"Inconsolable by parents"},
+          {"Discriminator":"Inappropiate history"},
+          {"Discriminator":"Hot"},
+          {"Discriminator":"Moderate pain"}
+        ]
+      },
+
+      {
+        "Color":"Green",
+        "Discriminators": [
+          {"Discriminator":"Vomiting"},
+          {"Discriminator":"Recent mild pain"},
+          {"Discriminator":"Recent problem"}
+        ]
+      }
+    ]
+  },
+  {
+    "ID":23,
+    "Name":"Prueba levels",
+    "RiskLimit": 3,
+    "Description": "This is a presentation defined flow diagram. Many patients who present with a history of falls have suffered trauma as a result, and their priority will reflect the injuries suffered. Some, however, may have had a serious underlying pathology that caused them to fall, or may have developed complications after falling. This chart is designed to allow accurate prioritisation whether the injury or underlying cause is more pressing. A number of general discriminators have been included to ensure that patients suffering from serious underlying conditions or limb-threatening injuries are given a high priority",
+    "Level":[
+      {
+        "Color":"Red",
+        "Discriminators": [
+          {"Discriminator":"Airway Compromise"},
+          {"Discriminator":"Inadequate breathing"},
+          {"Discriminator":"Shock"}
+        ]
+      },
+      {
+        "Color":"Orange",
+        "Discriminators": [
+          {"Discriminator":"Vomiting Blood"},
+          {"Discriminator":"Passing fresh or altered blood PR"},
+          {"Discriminator":"Purpura"},
+          {"Discriminator":"Not-blanching rash"},
+          {"Discriminator":"Hot baby"},
+          {"Discriminator":"Very hot"},
+          {"Discriminator":"Severe pain"}
+        ]
+      }
+    ]
+  }
+
+]

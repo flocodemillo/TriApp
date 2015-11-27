@@ -1,0 +1,408 @@
+[
+  {
+    "Discriminator":"Abdominal pain",
+    "Description":"Any pain felt in the abdomen. Abdominal pain associated with back pain may indicate abdominal aortic aneurysm, while association with PV bleeding may indicate ectopic pregnancy or miscarriage"
+  },
+  {
+    "Discriminator":"Abrupt onset",
+    "Description":"Onset within seconds or minutes. May cause waking in sleep"
+  },
+  {
+    "Discriminator":"Acute chemical eye injury",
+    "Description":"Any substance splashed into or placed into the eye within the past 12 hours that caused stinging, burning or reduced vision should be assumed to have caused chemical injury"
+  },
+  {
+    "Discriminator":"Acute complete loss of vision",
+    "Description":"Loss of vision in one or both eyes within the preceding 24 hours that has not returned to normal"
+  },
+  {
+    "Discriminator":"Acute onset after injury",
+    "Description":"Onset of symptoms immediately within 24 hours of a physically traumatic event"
+  },
+  {
+    "Discriminator":"Acutely avulsed tooth",
+    "Description":"A tooth that has been avulsed intact within the previous 24 hours"
+  },
+  {
+    "Discriminator":"Acutely short of breath",
+    "Description":"Shortness of breath that comes on suddenly, or a sudden exacerbation of chronic shortness of breath"
+  },
+  {
+    "Discriminator":"Age less than 25 years",
+    "Description":"Less than 25 years old"
+  },
+  {
+    "Discriminator":"Airway compromise",
+    "Description":"An airway may be compromised either because it cannot be kept open or because the airway protective reflexes (that stop inhalation) have been lost. Failure to keep the airway open will result either in intermittent total obstruction or in partial obstruction. This will manifest itself as snoring or bubbling sounds during breathing"
+  },
+  {
+    "Discriminator":"Altered blood",
+    "Description":"Darker than fresh blood and often smelling more like melaena"
+  },
+  {
+    "Discriminator":"Altered conscious level",
+    "Description":"Not fully alert. Either responding to voice or pain only or unresponsive"
+  },
+  {
+    "Discriminator":"Altered conscious level not wholly attributable to alcohol",
+    "Description":"A patient who is not fully alert, with a history of alcohol ingestion, and in whom there may be other causes of reduced conscious level"
+  },
+  {
+    "Discriminator":"Altered conscious level wholly attributable to alcohol",
+    "Description":"A patient who is not fully alert, with a clear history of alcohol ingestion and in whom there is no doubt that all other causes of reduced conscious level have been excluded"
+  },
+  {
+    "Discriminator":"Altered facial sensation",
+    "Description":"Any alteration of sensation on the face"
+  },
+  {
+    "Discriminator":"Atypical behaviour",
+    "Description":"Children who are behaving in a way that is not usual in the given situation. The carers will often volunteer this information. Such children are often referred to as fractious or ‘out of sorts’"
+  },
+  {
+    "Discriminator":"Auricular haematoma",
+    "Description":"A tense haematoma (usually post traumatic) in the outer ear"
+  },
+  {
+    "Discriminator":"Black or redcurrant stool",
+    "Description":"Any blackness fulfils the criteria of black stool while a dark red stool, classically seen in intussusceptions, is redcurrant stool"
+  },
+  {
+    "Discriminator":"Bleeding disorder",
+    "Description":"Congenital or acquired bleeding disorder"
+  },
+  {
+    "Discriminator":"Breathing after airway opened",
+    "Description":"In major incidents the presence of breathing after simple airway opening manoeuvres allows the respiratory rate to be counted. Absence of breathing when the airway is open indicates death"
+  },
+  {
+    "Discriminator":"Capillary refill time",
+    "Description":"The capillary refill time is the time taken for the nail bed capillaries to refill after pressure has been applied for 5 seconds. The normal time is less than 2 seconds. This sign is less useful if the patient is cold"
+  },
+  {
+    "Discriminator":"Capillary refill time abnormal",
+    "Description":"Major incident casualties whose capillary refill is prolonged (more than 2 seconds) are categorised as RED"
+  },
+  {
+    "Cardiac pain":"Cardiac pain",
+    "Description":"Classically a severe, dull, ‘gripping’ or ‘heavy’ pain in the centre of the chest, radiating to the left arm or to the neck. May be associated with sweating and nausea"
+  },
+  {
+    "Discriminator":"Chest injury",
+    "Description":"Any injury to the area below the clavicles and above the level of the lowest rib. Injury to the lower part of the chest can cause underlying damage to abdominal organs"
+  },
+  {
+    "Discriminator":"Cold",
+    "Description":"If the skin feels cold the patient is clinically said to be cold. The temperature should be taken as soon as possible – a core temperature less than 35◦C is cold"
+  },
+  {
+    "Discriminator":"Colicky pain",
+    "Description":"A fracture or dislocation may leave fragments or ends of bone pressing so hard against the skin that the viability of the skin is threatened. The skin will be white and under tension"
+  },
+  {
+    "Discriminator":"Critical skin",
+    "Description":"A fracture or dislocation may leave fragments or ends of bone pressing so hard against the skin that the viability of the skin is threatened. The skin will be white and under tension"
+  },
+  {
+    "Discriminator":"Current palpitation",
+    "Description":"A feeling of the heart racing (often described as a fluttering) that is still present"
+  },
+  {
+    "Discriminator":"Currently fitting",
+    "Description":"Patients who are in the tonic or clonic stages of a grand mal convulsion, and patients currently experiencing partial fits"
+  },
+  {
+    "Discriminator":"Deformity",
+    "Description":"This will always be subjective. Abnormal angulation or rotation is implied"
+  },
+  {
+    "Discriminator":"Diplopia",
+    "Description":"Double vision that resolves when one eye is closed"
+  },
+  {
+    "Discriminator":"Direct trauma to the back",
+    "Description":"This may be top to bottom (loading), for instance when people fall and land on their feet, bending (forwards, backwards or to the side) or twisting"
+  },
+  {
+    "Discriminator":"Direct trauma to the neck",
+    "Description":"This may be top to bottom (loading), for instance when something falls on the head, bending (forwards, backwards or to the side), twisting or distracting such as in hanging"
+  },
+  {
+    "Discriminator":"Discharge",
+    "Description":"In the context of sexually acquired infection this is any discharge from the penis or abnormal discharge from the vagina"
+  },
+  {
+    "Discriminator":"Disruptive",
+    "Description":"Disruptive behaviour is behaviour that affects the smooth running of the department. It may be threatening"
+  },
+  {
+    "Discriminator":"Distal vascular compromise",
+    "Description":"There will be a combination of pallor, coldness, altered sensation and pain with or without absent pulses distal to the injury"
+  },
+  {
+    "Discriminator":"Drooling",
+    "Description":"Saliva running from the mouth as a result of being unable to swallow"
+  },
+  {
+    "Discriminator":"Dysuria",
+    "Description":"Pain or difficulty in passing urine. Pain is typically described as stinging or hot"
+  },
+  {
+    "Discriminator":"Electrical injury",
+    "Description":"Any injury caused or possibly caused by an electric current. This includes AC and DC and both artificial and natural sources"
+  },
+  {
+    "Discriminator":"Exhaustion",
+    "Description":"Exhausted patients appear to reduce the effort they make to breathe despite continuing respiratory insufficiency. This is pre-terminal"
+  },
+  {
+    "Discriminator":"Exsanguinating haemorrhage",
+    "Description":"Haemorrhage which is occurring at such a rate that death will ensue unless bleeding is stopped"
+  },
+  {
+    "Discriminator":"Externalisation of organs",
+    "Description":"Herniation or frank extrusion of internal organs"
+  },
+  {
+    "Discriminator":"Facial oedema",
+    "Description":"Diffuse swelling around the face, usually involving the lips"
+  },
+  {
+    "Discriminator":"Facial swelling",
+    "Description":"Swelling around the face which may be localised or diffuse"
+  },
+  {
+    "Discriminator":"Fails to react to parents",
+    "Description":"Failure to react in any way to a parent’s face or voice. Abnormal reactions and apparent lack of recognition of a parent are also worrying signs"
+  },
+  {
+    "Discriminator":"Floppy",
+    "Description":"Parents may describe their children as floppy. Tone is generally reduced – the most noticeable sign is often lolling of the head"
+  },
+  {
+    "Discriminator":"Foreign body sensation",
+    "Description":"A sensation of something in the eye, often expressed as scraping or grittiness"
+  },
+  {
+    "Discriminator":"Frank haematuria",
+    "Description":"Red discolouration of the urine caused by blood"
+  },
+  {
+    "Discriminator":"Fresh blood",
+    "Description":"Unaltered blood – readily identified by both the patient and their carers"
+  },
+  {
+    "Discriminator":"Gross deformity",
+    "Description":"This will always be subjective. Gross and abnormal angulation or rotation is implied"
+  },
+  {
+    "Discriminator":"Head injury",
+    "Description":"Any traumatic event involving the head"
+  },
+  {
+    "Discriminator":"Headache",
+    "Description":"Any pain around the head that is not related to a particular anatomical structure. Facial pain is not included"
+  },
+  {
+    "Discriminator":"Heavy PV blood loss",
+    "Description":"PV loss is extremely difficult to assess. The presence of large clots or constant flow fulfils this criterion. The use of a large number of sanitary towels is suggestive of heavy loss"
+  },
+  {
+    "Discriminator":"High blood pressure",
+    "Description":"A history of raised blood pressure or a raised blood pressure on examination"
+  },
+  {
+    "Discriminator":"High lethality",
+    "Description":"Lethality is the potential of the substance taken to cause harm. Advice from a poisons centre may be required to establish the level of risk of serious illness or death. If in doubt, assume a high risk"
+  },
+  {
+    "Discriminator":"High lethality chemical",
+    "Description":"Lethality is the potential of the chemical to cause harm. Advice may be required to establish the level of risk. If in doubt, assume a high risk"
+  },
+  {
+    "Discriminator":"High lethality envenomation",
+    "Description":"Lethality is the potential of the envenomation to cause harm. Local knowledge may allow identification of the venomous creature, but advice may be required. If in doubt, assume a high risk"
+  },
+  {
+    "Discriminator":"High risk of (further) harm to others",
+    "Description":"The presence of a potential risk of harm to others can be judged by looking at posture (tense, clenched), speech patterns (loud, using threatening words) and motor behaviour (restless, pacing). High risk should be assumed if weapons and potential victims are available, or if self-control is lost"
+  },
+  {
+    "Discriminator":"High risk of (further) self-harm",
+    "Description":"An initial view of the risk of self-harm can be formed by considering the patient’s behaviour. Patients who have a significant history of self-harm, who are actively trying to harm themselves or who are actively trying to leave with the intent of harming themselves are at high risk"
+  },
+  {
+    "Discriminator":"History of acutely vomiting blood",
+    "Description":"Frank haematemesis, vomiting of altered blood (coffee ground) or of blood mixed in the vomit within the past 24 hours"
+  },
+  {
+    "Discriminator":"History of fitting",
+    "Description":"Any observed or reported fits that have occurred during the period of illness or following and episode of trauma"
+  },
+  {
+    "Discriminator":"History of head injury",
+    "Description":"A history of a recent physically traumatic event involving the head. Usually this will be reported by the patient but if the patient has been unconscious this history should be sought from a reliable witness"
+  },
+  {
+    "Discriminator":"History of overdose or poisoning",
+    "Description":"This information may come from others or may be deduced if medication is missing"
+  },
+  {
+    "Discriminator":"History of recent foreign travel",
+    "Description":"Recent significant foreign travel (within 2 weeks)"
+  },
+  {
+    "Discriminator":"History of trauma",
+    "Description":"A history of a recent physically traumatic event"
+  },
+  {
+    "Discriminator":"History of unconsciousness",
+    "Description":"There may be a reliable witness who can state whether the patient was unconscious (and for how long). If not, a patient who is unable to remember the incident should be assumed to have been unconscious"
+  },
+  {
+    "Discriminator":"Hot",
+    "Description":"If the skin feels hot the person is clinically said to be hot. The temperature should be taken as soon as possible – a temperature of 38.5◦C and greater is hot"
+  },
+  {
+    "Discriminator":"Hot baby",
+    "Description":"If the skin is hot, the child is clinically said to be hot. The temperature should be taken as soon as possible – a temperature of 38.5◦C and greater is hot. A baby is a child less than 1 year old"
+  },
+  {
+    "Discriminator":"Hot joint",
+    "Description":"Any warmth around a joint. Often accompanied by redness"
+  },
+  {
+    "Discriminator":"Hyperglycaemia",
+    "Description":"Glucose greater than 17 mmol/l"
+  },
+  {
+    "Discriminator":"Hyperglycaemia with ketosis",
+    "Description":"Glucose less than 3 mmol/l"
+  },
+  {
+    "Discriminator":"In active labour",
+    "Description":"A woman who is having regular and frequent painful contractions"
+  },
+  {
+    "Discriminator":"Inability to bear weight",
+    "Description":"Inability to carry the full weight of the body through one or both lower limbs. This may be because of pain or loss of function"
+  },
+  {
+    "Discriminator":"Inadequate breathing",
+    "Description":"Patients who are failing to breathe well enough to maintain adequate oxygenation have inadequate breathing. There may be an increased work of breathing, signs of inadequate breathing or exhaustion"
+  },
+  {
+    "Discriminator":"Inadequate history",
+    "Description":"If there is no clear and unequivocal history of acute alcohol ingestion, and if head injury, drug ingestion, underlying medical condition, etc. cannot be definitely excluded, then the history is inadequate"
+  },
+  {
+    "Discriminator":"Inappropriate history",
+    "Description":"When the history (story) given does not explain the physical findings it is termed inappropriate. This is important as it is a marker of safeguarding concerns in both adults and children"
+  },
+  {
+    "Discriminator":"Inconsolable by parents",
+    "Description":"Children whose crying or distress does not respond to attempts by their parents to comfort them"
+  },
+  {
+    "Discriminator":"Increased work of breathing",
+    "Description":"Increased work of breathing is shown as increased respiratory rate, use of accessory muscles and grunting"
+  },
+  {
+    "Discriminator":"Inhalational injury",
+    "Description":"A history of being confined in a smoke-filled space is the most reliable indicator of smoke inhalation. Carbon deposits around the mouth and nose and hoarse voice may be present. History is also the most reliable way of diagnosing inhalation of chemicals – there will not necessarily be any signs"
+  },
+  {
+    "Discriminator":"Jaundice",
+    "Description":"Neonatal jaundice"
+  },
+  {
+    "Discriminator":"Known or likely immunosuppression",
+    "Description":"Any patient who is known or likely to be immunosuppressed including those on immunosuppressive drugs (including long-term steroids)"
+  },
+  {
+    "Discriminator":"Lethality",
+    "Description":"The potential of the substance taken to cause illness or death. Advice from a poisons centre may be required to establish this. If in doubt, assume a high risk"
+  },
+  {
+    "Discriminator":"Local infection",
+    "Description":"Local infection usually manifests as inflammation (pain, swelling and redness) confined to a particular site or area, with or without a collection of pus"
+  },
+  {
+    "Discriminator":"Local inflammation",
+    "Description":"Local inflammation will involve pain, swelling and redness confined to a particular site or area"
+  },
+  {
+    "Discriminator":"Low PEFR",
+    "Description":"The PEFR predicted after consideration of the age and sex of the patient. Some patients may know their ‘best’ PEFR and this may be used. If the ratio of measured to predicted is less than 50% then this criterion is fulfilled"
+  },
+  {
+    "Discriminator":"Low SpO2",
+    "Description":"This is a saturation of less than 95% on air"
+  },
+  {
+    "Discriminator":"Marked distress",
+    "Description":"Patients who are markedly physically or emotionally upset"
+  },
+  {
+    "Discriminator":"Moderate itch",
+    "Description":"An itch that is bearable but intense"
+  },
+  {
+    "Discriminator":"Moderate lethality",
+    "Description":"Lethality is the potential of the substance taken to cause serious illness or death. Advice from a poisons centre may be required to establish the level of risk to the patient"
+  },
+  {
+    "Discriminator":"Moderate lethality chemical",
+    "Description":"Lethality is the potential of the chemical to cause harm. Advice may be required to establish the level of risk. If in doubt, assume a high risk"
+  },
+  {
+    "Discriminator":"Moderate lethality envenomation",
+    "Description":"Lethality is the potential of the envenomation to cause harm. Local knowledge may allow identification of the venomous creature, but advice may be required"
+  },
+  {
+    "Discriminator":"Moderate pain",
+    "Description":"Pain that is bearable but intense"
+  },
+  {
+    "Discriminator":"Moderate risk of (further) harmto others",
+    "Description":"The presence of a potential risk of harm to others can be judged by looking at posture (tense, clenched), speech patterns (loud, using threatening words) and motor behaviour (restless, pacing). Moderate risk should be assumed if there is any indication of potential harm to others"
+  },
+  {
+    "Discriminator":"Moderate risk of (further) self-harm",
+    "Description":"An initial view of the risk of self-harm can be formed by considering the patient’s behaviour. Patients without a significant history of self-harm, who are not actively trying to harm themselves, who are not actively trying to leave with the intent of harming themselves, but who profess the desire to harm themselves are at moderate risk"
+  },
+  {
+    "Discriminator":"New abnormal pulse",
+    "Description":"A bradycardia (less than 60/min in adults), a tachycardia (more than 100/min in adults) or an irregular rhythm. Age-appropriate definitions of bradycardia and tachycardia should be used in children"
+  },
+  {
+    "Discriminator":"New neurological deficit less than 24 hours old",
+    "Description":"Any loss of neurological function that has come on within the previous 24 hours. This might include altered or lost sensation, weakness of the limbs (either transiently or permanently) and alterations in bladder or bowel function"
+  },
+  {
+    "Discriminator":"New neurological deficit more than 24 hours old",
+    "Description":"Any loss of neurological function including altered or lost sensation, weakness of the limbs (either transiently or permanently) and alterations in bladder or bowel function"
+  },
+  {
+    "Discriminator":"No improvement with own asthma medications",
+    "Description":"This history should be available from the patient. A failure to improve with bronchodilator therapy given by the GP or paramedic is equally significant"
+  },
+  {
+    "Discriminator":"Non-blanching rash",
+    "Description":"A rash that does not blanch (go white) when pressure is applied to it. Often tested using a glass tumbler to apply pressure as any colour change can be observed through the bottom of the tumbler"
+  },
+  {
+    "Discriminator":"Not distractible",
+    "Description":"Children who are distressed by pain or other things who cannot be distracted by conversation or play"
+  },
+  {
+    "Discriminator":"Not feeding",
+    "Description":"Children who will not take any solid or liquid (as appropriate) by mouth. Children who will take the food but always vomit afterwards may also fulfil this criterion"
+  },
+  {
+    "Discriminator":"Not passing urine",
+    "Description":"Failure to produce and pass urine. This may be difficult to judge in children (and the elderly) and reference to the number of nappies or pads used may be useful"
+  }
+]
+
+
