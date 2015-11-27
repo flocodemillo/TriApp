@@ -40,6 +40,7 @@ public class LevelFragment extends ListFragment implements DiscriminatorAdapter.
     public void onMethodCallback(int color) {
         this.color = color;
         Log.v(TAG, "Color: " + color);
+        // Probando Github
         // do something
     }
 
