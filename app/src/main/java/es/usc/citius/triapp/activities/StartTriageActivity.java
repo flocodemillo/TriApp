@@ -22,6 +22,8 @@ public class StartTriageActivity extends AppCompatActivity implements Discrimina
     private Toolbar mToolbar;
     private static final String TAG = "StartTriageActivity";
 
+
+    //Callback que no uso
     @Override
     public void onMethodCallback(int color) {
         Log.v(TAG, "Color: " + color);
@@ -29,13 +31,6 @@ public class StartTriageActivity extends AppCompatActivity implements Discrimina
         ReportFragment = mAdapter.getItem(4)(ReportFragment).setcolor(color);*/
         // do something
     }
-
-   /* public void sendColorValue(int color) {
-        viewPager = (ViewPager) findViewById(R.id.pager);
-        mAdapter = new SlideLevelAdapter(getSupportFragmentManager(), id);
-        mAdapter.getItem(4)(ReportFragment).setcolor(color);
-
-    }*/
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

@@ -5,31 +5,26 @@
 
     <CheckBox
         android:id="@+id/answer"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_toRightOf="@+id/discriminator"
-        android:gravity="end" />
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        />
 
     <Button
         android:id="@+id/help"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_toRightOf="@+id/answer"
-        android:gravity="end" />
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginRight="8dp" />
 
-    <TextView
-        android:id="@+id/description"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/discriminator"
-        android:layout_below="@+id/discriminator"/>
 
     <TextView
         android:id="@+id/discriminator"
         android:layout_width="wrap_content"
-        android:layout_height="fill_parent"
-        android:layout_alignParentLeft="true"
-        android:layout_centerVertical="true"
-        android:textSize="30sp"/>
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/help"
+        android:textSize="25dp"
+        android:textStyle="bold" />
 
 </RelativeLayout>

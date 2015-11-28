@@ -70,7 +70,7 @@ public class DiscriminatorAdapter extends ArrayAdapter<Discriminator>{
 
                 convertView = layoutInflater.inflate(R.layout.listview_discriminator, null);
                 holder.setTextViewTitle((TextView) convertView.findViewById(R.id.discriminator));
-                holder.setTextViewSubtitle((TextView) convertView.findViewById(R.id.description));
+                //holder.setTextViewSubtitle((TextView) convertView.findViewById(R.id.description));
                 holder.setCheckBox((CheckBox) convertView.findViewById(R.id.answer));
                 holder.setButton((Button) convertView.findViewById(R.id.help));
                 convertView.setTag(holder);
@@ -83,7 +83,7 @@ public class DiscriminatorAdapter extends ArrayAdapter<Discriminator>{
             final Discriminator discriminator = getItem(position);
 
             holder.getTextViewTitle().setText(discriminator.getDiscriminator());
-            holder.getTextViewSubtitle().setText(discriminator.getDescription());
+            //holder.getTextViewSubtitle().setText(discriminator.getDescription());
             //holder.getCheckBox().setChecked(true);
             holder.getCheckBox().setTag(discriminator.getDiscriminator());
             holder.getCheckBox().setChecked(discriminator.getAnswer());

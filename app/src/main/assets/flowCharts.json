@@ -88,7 +88,9 @@
           {"Discriminator":"Inconsolable by parents"},
           {"Discriminator":"Inappropiate history"},
           {"Discriminator":"Hot"},
-          {"Discriminator":"Moderate pain"}
+          {"Discriminator":"Moderate pain"},
+          {"Discriminator":"Craken 1"},
+          {"Discriminator":"Craken 2"}
         ]
       },
 

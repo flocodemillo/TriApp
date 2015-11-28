@@ -20,7 +20,7 @@ import es.usc.citius.triapp.fragments.ReportFragment;
 public class SlideLevelAdapter extends FragmentPagerAdapter {
 
 
-    private String[] titulo = {"rojo","amarillo", "verde", "azul", "informe"};
+    private String[] titulo = {"RED","ORANGE", "YELLOW", "GREEN", "REPORT"};
     private static final String TAG = "SlideLevelAdapter";
     private static int levels;
     private static FlowChart flowchart = null;
