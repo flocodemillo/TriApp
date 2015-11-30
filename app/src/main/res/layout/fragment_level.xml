@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
     android:orientation="vertical"
     android:id = "@+id/container" >
 
 
-    <ListView
+  <!-- <ListView
         xmlns:android="http://schemas.android.com/apk/res/android"
         android:id="@android:id/list"
         android:layout_width="fill_parent"
@@ -15,7 +15,16 @@
         android:dividerHeight="1dp"
         android:listSelector="@drawable/list_discriminator_selector"
         >
-    </ListView>
+    </ListView> -->
 
-</LinearLayout>
+    <android.support.v7.widget.RecyclerView
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:layout_marginTop="15dp"
+        android:id="@+id/rv"
+        >
+    </android.support.v7.widget.RecyclerView>
+
+
+</RelativeLayout>
 
