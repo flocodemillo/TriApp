@@ -10,9 +10,8 @@ ToDo
 
 Bugs
 
-- cuando se selecciona un discriminador del último tab (azul) no funciona probablemento debido al ciclo de vida a la hora de crear el último fragment del pager
 - El SlideAdapter no soporta un número dinamico de niveles debido a que el Report se crea de forma estática
-- 
+- cuando se selecciona un discriminador del último tab (azul) no funciona probablemento debido al ciclo de vida a la hora de crear el último fragment del pager
 
 In process
 
