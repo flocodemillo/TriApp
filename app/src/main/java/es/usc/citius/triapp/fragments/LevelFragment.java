@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.support.v4.app.Fragment;
 
 
+import android.support.v4.app.ListFragment;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.util.Log;
@@ -25,7 +26,7 @@ import es.usc.citius.triapp.adapters.DiscriminatorAdapter;
 import es.usc.citius.triapp.model.Person;
 
 
-public class LevelFragment extends Fragment {//extends ListFragment implements DiscriminatorAdapter.AdapterCallback{
+public class LevelFragment extends ListFragment { // implements DiscriminatorAdapter.AdapterCallback{
 
     private static final String TAG = "LevelFragment";
     //private View view=null;
@@ -33,8 +34,8 @@ public class LevelFragment extends Fragment {//extends ListFragment implements D
     //private DiscriminatorAdapter.AdapterCallback mAdapterCallback;
     private RecyclerView rv;
     private List<Person> persons;
-    DiscriminatorsAdapter adapter;
-    LinearLayoutManager llm;
+    private DiscriminatorsAdapter adapter;
+    private LinearLayoutManager llm;
 
 
     public LevelFragment() {
@@ -45,9 +46,8 @@ public class LevelFragment extends Fragment {//extends ListFragment implements D
     public void onCreate(Bundle savedInstanceState) {
 
         super.onCreate(savedInstanceState);
-        initializeData();
-        adapter = new DiscriminatorsAdapter(persons);
-        llm = new LinearLayoutManager(getActivity());
+        //initializeData();
+
 
 
     }
@@ -66,40 +66,44 @@ public class LevelFragment extends Fragment {//extends ListFragment implements D
 
          // Inflate the layout for this fragment
 
-         Log.v(TAG, "Nombre workflow: " + Manchester.getCurrentWorkFlow());
+         Log.d(TAG, "Nombre workflow: " + Manchester.getCurrentWorkFlow());
          final View V = inflater.inflate(R.layout.fragment_level, container, false);
 
          //Cards
-         rv=(RecyclerView)V.findViewById(R.id.rv);
+        // rv=(RecyclerView)V.findViewById(R.id.rv);
          //adapter = new DiscriminatorsAdapter(persons);
+         //llm = new LinearLayoutManager(getActivity());
 
 
 
          //LinearLayoutManager llm = new LinearLayoutManager(getActivity(), LinearLayoutManager.HORIZONTAL, false);
         // LinearLayoutManager llm = new LinearLayoutManager(getActivity());
-         rv.setLayoutManager(llm);
+         /*rv.setLayoutManager(llm);
          rv.setBackgroundColor(Color.BLACK);
          rv.setHasFixedSize(true);
 
+         adapter = new DiscriminatorsAdapter(persons);
+         rv.setAdapter(adapter);*/
+
 
          //initializeData();
- rv.postDelayed(new Runnable() {
+ /*rv.postDelayed(new Runnable() {
      @Override
      public void run() {
 
          rv.setAdapter(adapter);
          Log.d("Level", (rv.getAdapter() != null) + "");
      }
- }, 2000);
+ }, 2000);*/
 
          //initializeAdapter();
 
 
-         //Bundle args = getArguments();
+         Bundle args = getArguments();
 
          //Primer campo callback
 
-         //setListAdapter(new DiscriminatorAdapter((DiscriminatorAdapter.AdapterCallback)this.getActivity(), this.getActivity().getBaseContext(), this.getActivity(), (Manchester.getCurrentWorkFlow()).getLevel(args.getInt("color", 0)).getDiscriminators(), args.getInt("color", 0)));
+         setListAdapter(new DiscriminatorAdapter((DiscriminatorAdapter.AdapterCallback)this.getActivity(), this.getActivity().getBaseContext(), this.getActivity(), (Manchester.getCurrentWorkFlow()).getLevel(args.getInt("color", 0)).getDiscriminators(), args.getInt("color", 0)));
 
 
 
@@ -107,12 +111,12 @@ public class LevelFragment extends Fragment {//extends ListFragment implements D
 
      }
 
-    @Override
+   /* @Override
     public void onAttach(Activity activity) {
         super.onAttach(activity);
 
         //mAdapterCallback = (DiscriminatorAdapter.AdapterCallback )activity;
-    }
+    }*/
 
     private void initializeData(){
         persons = new ArrayList<>();

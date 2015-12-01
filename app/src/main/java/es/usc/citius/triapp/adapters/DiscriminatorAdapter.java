@@ -105,6 +105,7 @@ public class DiscriminatorAdapter extends ArrayAdapter<Discriminator>{
                                 ViewPager v = (ViewPager) activity.findViewById(R.id.pager);
                                 mAdapterCallback.onMethodCallback(color);
                                 Manchester.setCurrentLevel(color);
+                                discriminator.setDescription(Dictionary.getInstance().getDefinition(discriminator.getDiscriminator()));
                                 v.setCurrentItem(4);
                             }
 

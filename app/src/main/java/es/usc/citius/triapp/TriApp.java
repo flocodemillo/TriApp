@@ -16,7 +16,6 @@ import android.widget.Toast;
 
 import es.usc.citius.triapp.data.Manchester;
 import es.usc.citius.triapp.activities.FlowChartIndexActivity;
-import es.usc.citius.triapp.fragments.ExampleFragment;
 import es.usc.citius.triapp.fragments.FragmentDrawer;
 import es.usc.citius.triapp.fragments.HomeFragment;
 
@@ -88,7 +87,6 @@ public class TriApp extends AppCompatActivity implements FragmentDrawer.Fragment
                 title = getString(R.string.title_home);
                 break;
             case 1:
-                //fragment = new ExampleFragment();
                 title = getString(R.string.title_friends);
                 break;
             case 2:

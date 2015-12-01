@@ -1,6 +1,7 @@
 package es.usc.citius.triapp.activities;
 
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.TabLayout;
 import android.support.v7.app.ActionBar;
@@ -9,10 +10,17 @@ import android.support.v4.view.ViewPager;
 import android.support.v7.widget.Toolbar;
 import android.util.Log;
 import android.view.View;
+import android.widget.TextView;
+
+import java.util.List;
 
 import es.usc.citius.triapp.R;
+import es.usc.citius.triapp.TriApp;
 import es.usc.citius.triapp.adapters.DiscriminatorAdapter;
 import es.usc.citius.triapp.adapters.SlideLevelAdapter;
+import es.usc.citius.triapp.data.Manchester;
+import es.usc.citius.triapp.data.manchester.Discriminator;
+import es.usc.citius.triapp.data.manchester.FlowChart;
 import es.usc.citius.triapp.fragments.ReportFragment;
 
 public class StartTriageActivity extends AppCompatActivity implements DiscriminatorAdapter.AdapterCallback{
@@ -49,6 +57,21 @@ public class StartTriageActivity extends AppCompatActivity implements Discrimina
 
         TabLayout tabLayout = (TabLayout) findViewById(R.id.toolbarlayout);
         tabLayout.setupWithViewPager(viewPager);
+
+    }
+
+    public void endTriage(View view) {
+        // Do something in response to button
+        Intent intent = new Intent(this, TriApp.class);
+        List<Discriminator> questions = (Manchester.getCurrentWorkFlow()).getLevel(Manchester.getCurrentLevel()).getDiscriminators();
+        for (Discriminator question : questions) {
+            if (question.getAnswer()) {
+                question.setAnswer(Boolean.FALSE);
+            }
+        }
+
+        this.finish();
+        startActivity(intent);
 
     }
 

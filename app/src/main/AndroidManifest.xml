@@ -21,20 +21,8 @@
             android:label="@string/title_flowchart_list" >
         </activity>
         <activity
-            android:name=".activities.FlowChartDetailActivity"
-            android:label="@string/title_flowchart_detail"
-            android:parentActivityName=".activities.FlowChartIndexActivity" >
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value=".activities.FlowChartIndexActivity" />
-        </activity>
-        <activity
             android:name=".activities.StartTriageActivity"
             android:label="@string/title_activity_triar" >
-        </activity>
-        <activity
-            android:name=".activities.ReportActivity"
-            android:label="@string/title_activity_report" >
         </activity>
     </application>
 
