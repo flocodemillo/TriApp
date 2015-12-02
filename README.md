@@ -7,7 +7,6 @@ Módulo de triaje
 ToDo
 
 - Buscador en el selector de workflows
-- Implementar metodo para calcular el tiempo que tarda el usuario en realizar el triaje
 - Sustituyendo el ListView por RecyclerView + CardView -> E/RecyclerView: No adapter attached; skipping layout (parado) 
 
 
