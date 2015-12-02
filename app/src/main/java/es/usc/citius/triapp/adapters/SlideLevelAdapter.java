@@ -32,7 +32,23 @@ public class SlideLevelAdapter extends FragmentPagerAdapter {
         levels = flowchart.getLevelsSize();
 
         //Añado un ultimo level para el report case 4
+
         levels++;
+
+        switch (levels) {
+
+            case 3:
+                titulo[0] = "RED";
+                titulo[1] = "ORANGE";
+                titulo[2] = "REPORT";
+                break;
+            case 4:
+                titulo[0] = "RED";
+                titulo[1] = "ORANGE";
+                titulo[2] = "YELLOW";
+                titulo[3] = "REPORT";
+                break;
+        }
     }
 
     @Override
@@ -40,34 +56,40 @@ public class SlideLevelAdapter extends FragmentPagerAdapter {
 
         Bundle args = new Bundle();
         LevelFragment level = new LevelFragment();
+        ReportFragment report = new ReportFragment();
 
-
-        //Añadir un nuevo tab con layout distinto para el report final
-        // Crear un nuevo fragment para esto, no reciclar LeverFragment porque
-        // el layout no sirve
-        // Tener en cuenta de que no siempre hay el mismo numero de tabs, en principio hace falta más de 1 switch
 
         Log.v(TAG, "Index del switch: " + index);
+
 
         switch (index) {
             case 0:
                 args.putInt("color", 0);
                 level.setArguments(args);
                 return level;
+
             case 1:
                 args.putInt("color", 1);
                 level.setArguments(args);
                 return level;
+
             case 2:
+                if (levels == 3)
+                    return report;
+
                 args.putInt("color", 2);
                 level.setArguments(args);
                 return level;
+
             case 3:
+                if (levels == 4)
+                    return report;
+
                 args.putInt("color", 3);
                 level.setArguments(args);
                 return level;
+
             case 4:
-                ReportFragment report = new ReportFragment();
                 return report;
         }
 

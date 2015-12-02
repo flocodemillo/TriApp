@@ -36,35 +36,28 @@ public class ReportFragment extends Fragment {
     }
 
 
-    public static ReportFragment newInstance() {
+   /* public static ReportFragment newInstance() {
         ReportFragment fragment = new ReportFragment();
 
         return fragment;
-    }
+    }*/
 
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        questions = (Manchester.getCurrentWorkFlow()).getLevel(Manchester.getCurrentLevel()).getDiscriminators();
-        Log.v(TAG, "Color: " + Manchester.getCurrentLevel());
-        for (Discriminator question : questions) {
-
-
-           /* if (question.getAnswer()) {
-                Log.v(TAG, "Nivel / Pregunta / Respuesta: " + Manchester.getCurrentLevel() + " / " + question.getDiscriminator() + " / " + question.getAnswer());
-            }*/
-        }
-
+        //Log.v(TAG, "Color: " + Manchester.getCurrentLevel());
+        //questions = (Manchester.getCurrentWorkFlow()).getLevel(Manchester.getCurrentLevel()).getDiscriminators();
+        //Log.v(TAG, "Color: " + Manchester.getCurrentLevel());
     }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
 
-        View V = inflater.inflate(R.layout.fragment_report, container, false);
+        //View V = inflater.inflate(R.layout.fragment_report, container, false);
 
-        flowchart = Manchester.getCurrentWorkFlow();
+
 
         return inflater.inflate(R.layout.fragment_report, container, false);
     }
@@ -73,24 +66,16 @@ public class ReportFragment extends Fragment {
 
         super.onResume();
 
+        flowchart = Manchester.getCurrentWorkFlow();
+
         TextView name = (TextView)getView().findViewById(R.id.name);
         name.setText(flowchart.getNombre());
 
         TextView level = (TextView)getView().findViewById(R.id.level);
         int nivel = Manchester.getCurrentLevel();
         //level.setText(nivel);
-       /* switch (nivel) {
-            case 0:
-                level.setText("Red");
-            case 1:
-                level.setText("Orange");
-            case 2:
-                level.setText("Yellow");
-            case 3:
-                level.setText("Green");
-        }*/
 
-        if (nivel == 0)
+       if (nivel == 0)
             level.setText("Red");
         if (nivel == 1)
             level.setText("Orange");
