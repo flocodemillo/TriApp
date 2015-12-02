@@ -11,9 +11,7 @@ TODO
 
 Bugs
 
-- El SlideAdapter no soporta un número dinamico de niveles debido a que el Report se crea de forma estática
-cuando se selecciona un discriminador del último tab (verde) no funciona probablemento debido al ciclo de vida a la hora de crear el último fragment del pager. No está entrando en onResume
-
+- Cuando se selecciona un discriminador del tab más próximo a Report (último tab) el ReportFragment no recibe el callback onResume() y no actualiza la vista.
 
 In process
 
