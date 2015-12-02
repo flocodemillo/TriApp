@@ -5,7 +5,10 @@
     android:orientation="vertical"
     tools:context="es.usc.citius.triapp.fragments.ReportFragment">
 
-    <!-- TODO: Update blank fragment layout -->
+    <Space
+        android:id="@+id/space"
+        android:layout_width="wrap_content"
+        android:layout_height="150dp" />
 
     <TextView
         android:id = "@+id/name"
@@ -44,19 +47,12 @@
         android:id="@+id/saveReport"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Save" />
+        android:text="@string/save" />
 
     <Button
         android:id="@+id/endTriage"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="End" />
+        android:text="@string/end" />
 
-    <!--<android.support.design.widget.FloatingActionButton
-        android:id="@+id/fab"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_margin="16dp"
-        android:clickable="true"-->
-      />
 </LinearLayout>

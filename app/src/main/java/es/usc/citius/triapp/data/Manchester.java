@@ -19,9 +19,8 @@ import es.usc.citius.triapp.data.manchester.Dictionary;
 import es.usc.citius.triapp.data.manchester.FlowChart;
 import es.usc.citius.triapp.data.manchester.Entry;
 
-/**
- * Created by vasily on 27/5/15.
- */
+
+
 public class Manchester {
 
     private static FlowChart[] workFlow = null;

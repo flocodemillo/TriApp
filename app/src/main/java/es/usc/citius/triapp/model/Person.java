@@ -8,6 +8,5 @@ public class Person {
  public Person(String name, String age) {
         this.name = name;
         this.age = age;
-
     }
 }

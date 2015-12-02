@@ -2,9 +2,8 @@ package es.usc.citius.triapp.data.manchester;
 
 import java.util.HashMap;
 
-/**
- * Created by vasily on 27/5/15.
- */
+
+
 public class Dictionary {
 
     private static final HashMap<String, String> definitions = new HashMap<>();
@@ -28,8 +27,7 @@ public class Dictionary {
     }
 
     public String getDefinition(String discriminator) {
-        String definition = definitions.get(discriminator);
 
-        return definition;
+        return definitions.get(discriminator);
     }
 }

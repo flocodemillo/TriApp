@@ -1,8 +1,6 @@
 package es.usc.citius.triapp.data.manchester;
 
-/**
- * Created by vasily on 27/5/15.
- */
+
 public class Entry {
 
     private String Discriminator;
@@ -12,10 +10,20 @@ public class Entry {
     }
 
     public String getDiscriminator() {
+
         return Discriminator;
     }
 
     public String getExplanation() {
+
         return Description;
+    }
+
+    public void setDiscriminator(String discriminator) {
+        this.Discriminator=discriminator;
+    }
+
+    public void setDescription(String description) {
+        this.Description=description;
     }
 }

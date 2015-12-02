@@ -3,9 +3,7 @@ package es.usc.citius.triapp.adapters;
 
 
 import android.app.Activity;
-
 import android.content.Context;
-
 import android.support.v4.view.ViewPager;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -26,9 +24,8 @@ import es.usc.citius.triapp.data.manchester.Discriminator;
 
 import java.util.List;
 
-/**
- * Created by vasily on 28/5/15.
- */
+
+
 public class DiscriminatorAdapter extends ArrayAdapter<Discriminator>{
 
         private static final String TAG = "DiscriminatorAdapter";
@@ -37,11 +34,8 @@ public class DiscriminatorAdapter extends ArrayAdapter<Discriminator>{
         private Activity activity;
         private int color;
         private List<Discriminator> questions;
-        private Discriminator question;
-        private AdapterCallback mAdapterCallback;
+        //private AdapterCallback mAdapterCallback;
         //private AdapterCallback mAdapterCallbackActivity;
-
-
 
 
         public DiscriminatorAdapter(AdapterCallback callback, Context context, Activity activity,List<Discriminator> objects, int color)
@@ -51,7 +45,7 @@ public class DiscriminatorAdapter extends ArrayAdapter<Discriminator>{
             this.context = context;
             this.activity = activity;
             this.color = color;
-            this.mAdapterCallback = callback;
+            //this.mAdapterCallback = callback;
             //this.mAdapterCallbackActivity = callback_activity;
         }
 
@@ -63,14 +57,13 @@ public class DiscriminatorAdapter extends ArrayAdapter<Discriminator>{
         public View getView(int position, View convertView, ViewGroup parent)
         {
             // holder pattern
-            Holder holder = null;
+            Holder holder;
             if (convertView == null)
             {
                 holder = new Holder();
 
                 convertView = layoutInflater.inflate(R.layout.listview_discriminator, null);
                 holder.setTextViewTitle((TextView) convertView.findViewById(R.id.discriminator));
-                //holder.setTextViewSubtitle((TextView) convertView.findViewById(R.id.description));
                 holder.setCheckBox((CheckBox) convertView.findViewById(R.id.answer));
                 holder.setButton((Button) convertView.findViewById(R.id.help));
                 convertView.setTag(holder);
@@ -83,8 +76,6 @@ public class DiscriminatorAdapter extends ArrayAdapter<Discriminator>{
             final Discriminator discriminator = getItem(position);
 
             holder.getTextViewTitle().setText(discriminator.getDiscriminator());
-            //holder.getTextViewSubtitle().setText(discriminator.getDescription());
-            //holder.getCheckBox().setChecked(true);
             holder.getCheckBox().setTag(discriminator.getDiscriminator());
             holder.getCheckBox().setChecked(discriminator.getAnswer());
             holder.getCheckBox().setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
@@ -101,17 +92,17 @@ public class DiscriminatorAdapter extends ArrayAdapter<Discriminator>{
                             Log.v(TAG, "Nivel / Pregunta / Respuesta: " + color + " / " + question.getDiscriminator() + " / " + question.getAnswer());
                             //System.out.println("Respuesta: " + question.getAnswer());
 
-                           if (question.getAnswer()) {
+                            if (question.getAnswer()) {
                                 ViewPager v = (ViewPager) activity.findViewById(R.id.pager);
-                                mAdapterCallback.onMethodCallback(color);
+                                //mAdapterCallback.onMethodCallback(color);
                                 discriminator.setDescription(Dictionary.getInstance().getDefinition(discriminator.getDiscriminator()));
                                 Manchester.setCurrentLevel(color);
                                 Log.v(TAG, "Manchester level: " + Manchester.getCurrentLevel());
                                 v.setCurrentItem(4);
                                 break;
-                           } else {
+                            } else {
                                 Manchester.setCurrentLevel(4);
-                           }
+                            }
 
                         }
 
@@ -139,7 +130,6 @@ public class DiscriminatorAdapter extends ArrayAdapter<Discriminator>{
     class Holder
     {
         TextView textViewTitle;
-        TextView textViewSubtitle;
         CheckBox CheckBox;
         Button button;
 
@@ -151,16 +141,6 @@ public class DiscriminatorAdapter extends ArrayAdapter<Discriminator>{
         public void setTextViewTitle(TextView textViewTitle)
         {
             this.textViewTitle = textViewTitle;
-        }
-
-        public TextView getTextViewSubtitle()
-        {
-            return textViewSubtitle;
-        }
-
-        public void setTextViewSubtitle(TextView textViewSubtitle)
-        {
-            this.textViewSubtitle = textViewSubtitle;
         }
 
         public CheckBox getCheckBox()

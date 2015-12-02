@@ -35,4 +35,14 @@
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Suck it!</string>
     <string name="title_activity_report">ReportActivity</string>
+    <string name="save">Save</string>
+    <string name="end">End</string>
+    <string name="level_red">Level: Red</string>
+    <string name="level_orange">Level: Orange</string>
+    <string name="level_yellow">Level: Yellow</string>
+    <string name="level_green">Level: Green</string>
+    <string name="level_blue">Level: Blue</string>
+    <string name="triar">Triar</string>
+    <string name="button_select_workflow">Select a workflow</string>
+    <string name="subtitle_home"><![CDATA[XML del fragment -> fragment_home.xml]]></string>
 </resources>

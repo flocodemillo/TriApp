@@ -3,9 +3,6 @@ package es.usc.citius.triapp.data.manchester;
 import java.util.List;
 
 
-/**
- * Created by vasily on 27/5/15.
- */
 public class FlowChart {
 
     private String ID;

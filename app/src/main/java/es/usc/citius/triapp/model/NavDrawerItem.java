@@ -1,8 +1,6 @@
 package es.usc.citius.triapp.model;
 
-/**
- * Created by vasily on 20/11/15.
- */
+
 public class NavDrawerItem {
     private boolean showNotify;
     private String title;

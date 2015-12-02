@@ -4,19 +4,13 @@ import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
-
-import android.support.v4.view.ViewPager;
 import android.util.Log;
 
-import es.usc.citius.triapp.R;
 import es.usc.citius.triapp.fragments.LevelFragment;
 import es.usc.citius.triapp.data.Manchester;
 import es.usc.citius.triapp.data.manchester.FlowChart;
 import es.usc.citius.triapp.fragments.ReportFragment;
 
-/**
- * Created by vasily on 27/5/15.
- */
 
 public class SlideLevelAdapter extends FragmentPagerAdapter {
 
@@ -24,13 +18,12 @@ public class SlideLevelAdapter extends FragmentPagerAdapter {
     private String[] titulo = {"RED","ORANGE", "YELLOW", "GREEN", "REPORT"};
     private static final String TAG = "SlideLevelAdapter";
     private static int levels;
-    private static FlowChart flowchart = null;
 
     public SlideLevelAdapter(FragmentManager fm, int currentWorkFlow) {
         super(fm);
         Manchester.setCurrentWorkFlow(currentWorkFlow);
         Manchester.setCurrentLevel(4); //El nivel de gravedad por defecto es 4 = azul
-        flowchart = Manchester.getCurrentWorkFlow();
+        FlowChart flowchart = Manchester.getCurrentWorkFlow();
         levels = flowchart.getLevelsSize();
 
         //Añado un ultimo level para el report case 4

@@ -1,8 +1,7 @@
 package es.usc.citius.triapp.data.manchester;
 
-/**
- * Created by vasily on 27/5/15.
- */
+
+
 public class Discriminator {
     private String Discriminator;
     private String Description;
@@ -30,6 +29,10 @@ public class Discriminator {
 
     public void setAnswer(Boolean Answer) {
         this.Answer = Answer;
+    }
+
+    public void setDiscriminator(String discriminator) {
+        this.Discriminator=discriminator;
     }
 
 }

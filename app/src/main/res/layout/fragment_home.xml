@@ -2,8 +2,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    tools:context="info.androidhive.materialdesign.activity.HomeFragment">
+    android:orientation="vertical">
+    <!--tools:context="info.androidhive.materialdesign.activity.HomeFragment">-->
 
 
     <TextView
@@ -13,8 +13,8 @@
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:gravity="center_horizontal"
-        android:textSize="45dp"
-        android:text="Triapp"
+        android:textSize="45sp"
+        android:text="@string/triar"
         android:textStyle="bold"/>
 
     <TextView
@@ -22,17 +22,17 @@
         android:layout_centerInParent="true"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:textSize="12dp"
+        android:textSize="12sp"
         android:layout_marginTop="10dp"
         android:gravity="center_horizontal"
-        android:text="XML del fragment -> fragment_home.xml" />
+        android:text="@string/subtitle_home" />
 
     <Button
         android:id="@+id/triar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
-        android:text="Seleccionar un workflow"
+        android:text="@string/button_select_workflow"
         android:gravity="center_horizontal"
         android:onClick="startTriage" />
 

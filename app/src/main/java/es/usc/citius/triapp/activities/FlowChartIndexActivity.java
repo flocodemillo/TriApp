@@ -3,8 +3,6 @@ package es.usc.citius.triapp.activities;
 import android.content.Intent;
 import android.os.Bundle;
 import android.app.Activity;
-import android.os.SystemClock;
-import android.util.Log;
 import android.view.View;
 
 
@@ -49,18 +47,13 @@ public class FlowChartIndexActivity extends Activity//FragmentActivity
 
             // In two-pane mode, list items should be given the
             // 'activated' state when touched.
-            ((FlowChartIndexFragment) this.getFragmentManager() //getSupportFragmentManager()
+            ((FlowChartIndexFragment) this.getFragmentManager()
                     .findFragmentById(R.id.flowchart_list))
                     .setActivateOnItemClick(true);
         }
 
-        //Contador tiempo triaje
-        //long startTime = System.currentTimeMillis();
-
-        //Manchester.setStartTime(SystemClock.elapsedRealtime());
+        //Empieza a contar el tiempo de triaje
         Manchester.setStartTime(System.currentTimeMillis());
-
-        // TODO: If exposing deep links into your app, handle intents here.
     }
 
     /**
@@ -78,7 +71,6 @@ public class FlowChartIndexActivity extends Activity//FragmentActivity
             arguments.putString(FlowChartDescriptionFragment.ARG_ITEM_ID, id);
             FlowChartDescriptionFragment fragment = new FlowChartDescriptionFragment();
             fragment.setArguments(arguments);
-            //getSupportFragmentManager().beginTransaction()
             this.getFragmentManager().beginTransaction()
                     .replace(R.id.flowchart_detail_container, fragment)
                     .commit();
@@ -89,8 +81,6 @@ public class FlowChartIndexActivity extends Activity//FragmentActivity
 
     public void startTriage(View view) {
 
-
-        //Log.v(TAG, "ID: " + numero);
         Intent intent = new Intent(this, StartTriageActivity.class);
         intent.putExtra("id", ID);
         startActivity(intent);

@@ -42,8 +42,7 @@ public class DiscriminatorsAdapter extends RecyclerView.Adapter<DiscriminatorsAd
     @Override
     public PersonViewHolder onCreateViewHolder(ViewGroup viewGroup, int i) {
         View v = LayoutInflater.from(viewGroup.getContext()).inflate(R.layout.cardview_discriminator, viewGroup, false);
-        PersonViewHolder pvh = new PersonViewHolder(v);
-        return pvh;
+        return new PersonViewHolder(v);
     }
 
     @Override
