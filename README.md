@@ -7,9 +7,7 @@ Módulo de triaje
 ToDo
 
 - Buscador en el selector de workflows
-- Implementar metodo para calcular el tiempo que tarda el usuario en realizar el triaje
 - Sustituyendo el ListView por RecyclerView + CardView -> E/RecyclerView: No adapter attached; skipping layout (parado) 
-
 
 Bugs
 
@@ -19,4 +17,5 @@ cuando se selecciona un discriminador del último tab (azul) no funciona probabl
 
 In process
 
-- StarTriageActivity -> void enTriage(View view): implementar un modo eficiente de vaciar el buffer de manchester para la próxima vez que se use.
+- StarTriageActivity -> void enTriage(View view): implementar un modo eficiente de vaciar el buffer de manchester para la próxima vez que se use (escribir los metodos en el propio Manchester).
+- Checkear en DiscriminatorAdapter.java si se selecciona un discriminador cuando ya hay otro seleccionado para avisar o borrar la selección anterior.
