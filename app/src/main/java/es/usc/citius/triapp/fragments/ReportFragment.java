@@ -2,6 +2,7 @@ package es.usc.citius.triapp.fragments;
 
 
 import android.os.Bundle;
+import android.os.SystemClock;
 import android.support.v4.app.Fragment;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -113,6 +114,9 @@ public class ReportFragment extends Fragment {
         TextView description = (TextView)getView().findViewById(R.id.description);
         description.setText(info);
 
+        TextView elapsedTime = (TextView)getView().findViewById(R.id.elapsedTime);
+        description.setText("" + Manchester.getElapsedTime(System.currentTimeMillis()));
+        //description.setText("" + SystemClock.elapsedRealtime());
 
     }
 

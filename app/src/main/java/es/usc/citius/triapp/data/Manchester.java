@@ -30,6 +30,7 @@ public class Manchester {
     private static List<FlowChart> workflowList = null;
     private static int currentWorkFlow;
     private static int currentLevel = 0;
+    private static long startTime;
 
     protected Manchester() {
     }
@@ -103,6 +104,13 @@ public class Manchester {
 
     public static int getCurrentLevel() {
         return currentLevel;
+    }
+
+    public static void setStartTime(long time) {
+        startTime = time;
+    }
+    public static long getElapsedTime(long currentTime) {
+        return (currentTime - startTime)/1000;
     }
 
    /* public static String getCurrentLevel() {

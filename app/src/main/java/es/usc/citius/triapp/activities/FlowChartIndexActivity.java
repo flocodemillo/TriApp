@@ -3,6 +3,7 @@ package es.usc.citius.triapp.activities;
 import android.content.Intent;
 import android.os.Bundle;
 import android.app.Activity;
+import android.os.SystemClock;
 import android.util.Log;
 import android.view.View;
 
@@ -52,6 +53,12 @@ public class FlowChartIndexActivity extends Activity//FragmentActivity
                     .findFragmentById(R.id.flowchart_list))
                     .setActivateOnItemClick(true);
         }
+
+        //Contador tiempo triaje
+        //long startTime = System.currentTimeMillis();
+
+        //Manchester.setStartTime(SystemClock.elapsedRealtime());
+        Manchester.setStartTime(System.currentTimeMillis());
 
         // TODO: If exposing deep links into your app, handle intents here.
     }
