@@ -1,39 +1,27 @@
 <resources>
-    <string name="app_name">Triapp</string>
 
-
-    <string name="action_search">Search</string>
-    <string name="drawer_open">Open</string>
-    <string name="drawer_close">Close</string>
-
-    <string name="nav_item_home">Triapp</string>
-    <string name="nav_item_friends">Login</string>
-    <string name="nav_item_notifications">End Session</string>
-
-    <!-- navigation drawer item labels  -->
     <string-array name="nav_drawer_labels">
         <item>@string/nav_item_home</item>
         <item>@string/nav_item_friends</item>
         <item>@string/nav_item_notifications</item>
     </string-array>
 
-    <string name="title_messages">Triapp</string>
+    <string name="app_name">Triapp</string>
+    <string name="action_search">Search</string>
+    <string name="drawer_open">Open</string>
+    <string name="drawer_close">Close</string>
+    <string name="nav_item_home">Start Triage</string>
+    <string name="nav_item_friends">Login</string>
+    <string name="nav_item_notifications">End Session</string>
+    <string name="title_messages">Logout</string>
     <string name="title_friends">Login</string>
     <string name="title_home">Triapp</string>
-
-    <string name="hello_world">Hello world!</string>
     <string name="name">Name</string>
     <string name="action_settings">Settings</string>
     <string name="title_flowchart_list">FlowCharts</string>
     <string name="title_flowchart_detail">FlowChart Detail</string>
     <string name="title_activity_triar">Triage</string>
     <string name="button_start">Start</string>
-    <string name="dialog_end_triage">End Triage?</string>
-    <string name="confirm">Confirm</string>
-    <string name="cancel">Cancel</string>
-
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Suck it!</string>
     <string name="title_activity_report">ReportActivity</string>
     <string name="save">Save</string>
     <string name="end">End</string>
@@ -45,4 +33,6 @@
     <string name="triar">Triar</string>
     <string name="button_select_workflow">Select a workflow</string>
     <string name="subtitle_home"><![CDATA[XML del fragment -> fragment_home.xml]]></string>
+    <string name="welcome_triapp">Welcome to TriApp</string>
+
 </resources>

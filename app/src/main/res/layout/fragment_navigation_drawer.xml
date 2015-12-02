@@ -3,7 +3,6 @@
     android:layout_height="match_parent"
     android:background="@android:color/white">
 
-
     <RelativeLayout
         android:id="@+id/nav_header_container"
         android:layout_width="match_parent"
@@ -15,7 +14,8 @@
             android:layout_width="70dp"
             android:layout_height="70dp"
             android:src="@drawable/ic_stat_name"
-            android:layout_centerInParent="true"/>
+            android:layout_centerInParent="true"
+            android:contentDescription="@string/welcome_triapp" />
 
     </RelativeLayout>
 
@@ -26,6 +26,5 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/nav_header_container"
         android:layout_marginTop="15dp" />
-
 
 </RelativeLayout>

@@ -43,8 +43,6 @@ public class ReportFragment extends Fragment {
 
         View V = inflater.inflate(R.layout.fragment_report, container, false);
 
-
-
         return inflater.inflate(R.layout.fragment_report, container, false);
     }
 
@@ -66,7 +64,6 @@ public class ReportFragment extends Fragment {
                 if (question.getAnswer()) {
                     TextView discriminator = (TextView) getView().findViewById(R.id.discriminator);
                     discriminator.setText(String.format("Discriminator: %s", question.getDiscriminator()));
-                    //level.setText(""+Manchester.getCurrentLevel());
                     String info = question.getDescription();
                     Log.v(TAG, "Final: " + Manchester.getCurrentLevel() + " / " + question.getDiscriminator() + " / " + question.getAnswer() + "/" + question.getDescription());
                     TextView description = (TextView)getView().findViewById(R.id.description);
@@ -111,7 +108,7 @@ public class ReportFragment extends Fragment {
 
                 Intent intent = new Intent(getActivity(), TriApp.class);
 
-                if (Manchester.getCurrentLevel()!=4) {
+                if (Manchester.getCurrentLevel() != 4) {
                     List<Discriminator> questions = (Manchester.getCurrentWorkFlow()).getLevel(Manchester.getCurrentLevel()).getDiscriminators();
                     for (Discriminator question : questions) {
                         if (question.getAnswer()) {

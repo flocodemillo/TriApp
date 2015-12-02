@@ -21,9 +21,7 @@ import es.usc.citius.triapp.data.Manchester;
 import es.usc.citius.triapp.data.manchester.Dictionary;
 import es.usc.citius.triapp.data.manchester.Discriminator;
 
-
 import java.util.List;
-
 
 
 public class DiscriminatorAdapter extends ArrayAdapter<Discriminator>{
