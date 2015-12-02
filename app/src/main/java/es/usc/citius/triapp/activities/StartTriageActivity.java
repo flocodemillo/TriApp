@@ -73,8 +73,6 @@ public class StartTriageActivity extends AppCompatActivity implements Discrimina
 
         Manchester.setStartTime(0);
 
-        //Calculo del tiempo que ha durado el triaje
-        //Log.v(TAG, "Tiempo transcurrido: " + Manchester.getElapsedTime(System.currentTimeMillis()));
         this.finish();
         startActivity(intent);
 

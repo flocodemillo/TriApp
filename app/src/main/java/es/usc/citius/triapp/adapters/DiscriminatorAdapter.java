@@ -101,14 +101,17 @@ public class DiscriminatorAdapter extends ArrayAdapter<Discriminator>{
                             Log.v(TAG, "Nivel / Pregunta / Respuesta: " + color + " / " + question.getDiscriminator() + " / " + question.getAnswer());
                             //System.out.println("Respuesta: " + question.getAnswer());
 
-                            if (question.getAnswer()) {
+                           if (question.getAnswer()) {
                                 ViewPager v = (ViewPager) activity.findViewById(R.id.pager);
                                 mAdapterCallback.onMethodCallback(color);
                                 discriminator.setDescription(Dictionary.getInstance().getDefinition(discriminator.getDiscriminator()));
                                 Manchester.setCurrentLevel(color);
                                 Log.v(TAG, "Manchester level: " + Manchester.getCurrentLevel());
                                 v.setCurrentItem(4);
-                            }
+                                break;
+                           } else {
+                                Manchester.setCurrentLevel(4);
+                           }
 
                         }
 

@@ -5,6 +5,7 @@ import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
 
+import android.support.v4.view.ViewPager;
 import android.util.Log;
 
 import es.usc.citius.triapp.R;
@@ -28,6 +29,7 @@ public class SlideLevelAdapter extends FragmentPagerAdapter {
     public SlideLevelAdapter(FragmentManager fm, int currentWorkFlow) {
         super(fm);
         Manchester.setCurrentWorkFlow(currentWorkFlow);
+        Manchester.setCurrentLevel(4); //El nivel de gravedad por defecto es 4 = azul
         flowchart = Manchester.getCurrentWorkFlow();
         levels = flowchart.getLevelsSize();
 

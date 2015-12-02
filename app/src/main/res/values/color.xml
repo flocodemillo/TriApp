@@ -15,6 +15,8 @@
     <color name="windowBackground">#FFFFFFFF</color>
     <color name="navigationBarColor">#000000</color>
     <color name="colorAccent">#FF6F00</color>
+    <color name="colorTabText">#ffffff</color>
+    <color name="colorTabSelected">#FF6F00</color>
     <color name="list_divider">#ffffff</color>
     <color name="list_discriminator_start_color">#FFFFFFFF</color>
     <color name="list_discriminator_end_color">#FFFFFFFF</color>
