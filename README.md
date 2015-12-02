@@ -9,7 +9,6 @@ ToDo
 - Buscador en el selector de workflows
 - Sustituyendo el ListView por RecyclerView + CardView -> E/RecyclerView: No adapter attached; skipping layout (parado) 
 
-
 Bugs
 
 - El SlideAdapter no soporta un número dinamico de niveles debido a que el Report se crea de forma estática
@@ -18,4 +17,5 @@ cuando se selecciona un discriminador del último tab (azul) no funciona probabl
 
 In process
 
-- StarTriageActivity -> void enTriage(View view): implementar un modo eficiente de vaciar el buffer de manchester para la próxima vez que se use.
+- StarTriageActivity -> void enTriage(View view): implementar un modo eficiente de vaciar el buffer de manchester para la próxima vez que se use (escribir los metodos en el propio Manchester).
+- Checkear en DiscriminatorAdapter.java si se selecciona un discriminador cuando ya hay otro seleccionado para avisar o borrar la selección anterior.
