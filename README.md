@@ -9,6 +9,7 @@ TODO
 - Buscador en el selector de workflows
 - Sustituir el ListView por RecyclerView + CardView -> E/RecyclerView: No adapter attached; skipping layout (parado) 
 - Checkear en DiscriminatorAdapter.java si se selecciona un discriminador cuando ya hay otro seleccionado para avisar o borrar la selección anterior.
+- Nuevo tab para ingresar y guardar datos necesarios para verificar un discriminador. Por ejemplo para verificar la temperatura.
 
 Bugs
 
