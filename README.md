@@ -7,7 +7,9 @@ Módulo de triaje
 TODO
 
 - Buscador en el selector de workflows
-- Sustituyendo el ListView por RecyclerView + CardView -> E/RecyclerView: No adapter attached; skipping layout (parado) 
+- Sustituir el ListView por RecyclerView + CardView -> E/RecyclerView: No adapter attached; skipping layout (parado) 
+- Checkear en DiscriminatorAdapter.java si se selecciona un discriminador cuando ya hay otro seleccionado para avisar o borrar la selección anterior.
+- Nuevo tab para ingresar y guardar datos necesarios para verificar un discriminador. Por ejemplo para verificar la temperatura.
 
 Bugs
 
@@ -16,4 +18,5 @@ Bugs
 In process
 
 - StarTriageActivity -> void enTriage(View view): implementar un modo eficiente de vaciar el buffer de manchester para la próxima vez que se use (escribir los metodos en el propio Manchester).
-- Checkear en DiscriminatorAdapter.java si se selecciona un discriminador cuando ya hay otro seleccionado para avisar o borrar la selección anterior.
+- Darle formato a ReportFragment
+
