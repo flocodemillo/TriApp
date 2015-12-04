@@ -14,6 +14,8 @@ import android.view.View;
 import android.widget.Toast;
 
 
+import es.usc.citius.triapp.activities.StartTriageActivity;
+import es.usc.citius.triapp.activities.UserBarcodeScanActivity;
 import es.usc.citius.triapp.data.Manchester;
 import es.usc.citius.triapp.activities.FlowChartIndexActivity;
 import es.usc.citius.triapp.fragments.FragmentDrawer;
@@ -71,6 +73,7 @@ public class TriApp extends AppCompatActivity implements FragmentDrawer.Fragment
         return super.onOptionsItemSelected(item);
     }
 
+    @Override
     public void onDrawerItemSelected(View view, int position) {
         displayView(position);
     }
@@ -110,5 +113,10 @@ public class TriApp extends AppCompatActivity implements FragmentDrawer.Fragment
         Intent intent = new Intent(this, FlowChartIndexActivity.class);
         startActivity(intent);
 
+    }
+
+    public void starUserScan(View view) {
+        Intent intent = new Intent(this, UserBarcodeScanActivity.class);
+        startActivity(intent);
     }
 }

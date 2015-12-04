@@ -103,6 +103,7 @@ public class ReportFragment extends Fragment {
     private void createAndShowAlertDialog() {
         AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
         builder.setTitle("Confirm");
+        //builder.setTitle(getString(R.string.dialog_confirm));
         builder.setPositiveButton(android.R.string.yes, new DialogInterface.OnClickListener() {
             public void onClick(DialogInterface dialog, int id) {
 

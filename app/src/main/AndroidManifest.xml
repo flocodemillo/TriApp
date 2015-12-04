@@ -24,6 +24,10 @@
             android:name=".activities.StartTriageActivity"
             android:label="@string/title_activity_triar" >
         </activity>
+        <activity
+            android:name=".activities.UserBarcodeScanActivity"
+            android:label="@string/title_activity_user_barcode_scan" >
+        </activity>
     </application>
 
 </manifest>

@@ -34,5 +34,7 @@
     <string name="button_select_workflow">Select a workflow</string>
     <string name="subtitle_home"><![CDATA[XML del fragment -> fragment_home.xml]]></string>
     <string name="welcome_triapp">Welcome to TriApp</string>
+    <string name="scan">Scan</string>
+    <string name="title_activity_user_barcode_scan">Scan</string>
 
 </resources>

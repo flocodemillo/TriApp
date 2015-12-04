@@ -1,10 +1,7 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical">
-    <!--tools:context="info.androidhive.materialdesign.activity.HomeFragment">-->
-
 
     <TextView
         android:id="@+id/label"
@@ -35,5 +32,15 @@
         android:text="@string/button_select_workflow"
         android:gravity="center_horizontal"
         android:onClick="startTriage" />
+
+    <Button
+        android:id="@+id/scan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_below="@id/triar"
+        android:text="@string/scan"
+        android:gravity="center_horizontal"
+        android:onClick="starUserScan" />
 
 </RelativeLayout>
