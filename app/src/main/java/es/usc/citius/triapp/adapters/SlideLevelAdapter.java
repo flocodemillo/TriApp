@@ -6,6 +6,7 @@ import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
 import android.util.Log;
 
+import es.usc.citius.triapp.fragments.BlueLevelFragment;
 import es.usc.citius.triapp.fragments.LevelFragment;
 import es.usc.citius.triapp.data.Manchester;
 import es.usc.citius.triapp.data.manchester.FlowChart;
@@ -54,6 +55,7 @@ public class SlideLevelAdapter extends FragmentPagerAdapter {
 
         Bundle args = new Bundle();
         LevelFragment level = new LevelFragment();
+        BlueLevelFragment blueLevel = new BlueLevelFragment();
         ReportFragment report = new ReportFragment();
 
 
@@ -73,14 +75,14 @@ public class SlideLevelAdapter extends FragmentPagerAdapter {
 
             case 2:
                 if (levels == 4)
-                    return report;
+                    return blueLevel;
 
                 args.putInt("color", 2);
                 level.setArguments(args);
                 return level;
 
             case 3:
-                if (levels == 5)
+                if (levels == 4)
                     return report;
 
                 args.putInt("color", 3);
@@ -88,7 +90,7 @@ public class SlideLevelAdapter extends FragmentPagerAdapter {
                 return level;
 
             case 4:
-                return report;
+                return blueLevel;
 
             case 5:
                 return report;
