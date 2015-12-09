@@ -96,7 +96,7 @@ public class DiscriminatorAdapter extends ArrayAdapter<Discriminator>{
                                 discriminator.setDescription(Dictionary.getInstance().getDefinition(discriminator.getDiscriminator()));
                                 Manchester.setCurrentLevel(color);
                                 Log.v(TAG, "Manchester level: " + Manchester.getCurrentLevel());
-                                v.setCurrentItem(4);
+                                v.setCurrentItem(5);
                                 break;
                             } else {
                                 Manchester.setCurrentLevel(4);

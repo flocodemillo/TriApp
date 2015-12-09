@@ -15,7 +15,7 @@ import es.usc.citius.triapp.fragments.ReportFragment;
 public class SlideLevelAdapter extends FragmentPagerAdapter {
 
 
-    private String[] titulo = {"RED","ORANGE", "YELLOW", "GREEN", "REPORT"};
+    private String[] titulo = {"RED","ORANGE", "YELLOW", "GREEN", "BLUE", "REPORT"};
     private static final String TAG = "SlideLevelAdapter";
     private static int levels;
 
@@ -28,20 +28,23 @@ public class SlideLevelAdapter extends FragmentPagerAdapter {
 
         //Añado un ultimo level para el report case 4
 
-        levels++;
+        //levels++;
+        levels = levels + 2;
 
         switch (levels) {
 
-            case 3:
-                titulo[0] = "RED";
-                titulo[1] = "ORANGE";
-                titulo[2] = "REPORT";
-                break;
             case 4:
                 titulo[0] = "RED";
                 titulo[1] = "ORANGE";
-                titulo[2] = "YELLOW";
+                titulo[2] = "BLUE";
                 titulo[3] = "REPORT";
+                break;
+            case 5:
+                titulo[0] = "RED";
+                titulo[1] = "ORANGE";
+                titulo[2] = "YELLOW";
+                titulo[3] = "BLUE";
+                titulo[4] = "REPORT";
                 break;
         }
     }
@@ -69,7 +72,7 @@ public class SlideLevelAdapter extends FragmentPagerAdapter {
                 return level;
 
             case 2:
-                if (levels == 3)
+                if (levels == 4)
                     return report;
 
                 args.putInt("color", 2);
@@ -77,7 +80,7 @@ public class SlideLevelAdapter extends FragmentPagerAdapter {
                 return level;
 
             case 3:
-                if (levels == 4)
+                if (levels == 5)
                     return report;
 
                 args.putInt("color", 3);
@@ -85,6 +88,9 @@ public class SlideLevelAdapter extends FragmentPagerAdapter {
                 return level;
 
             case 4:
+                return report;
+
+            case 5:
                 return report;
         }
 
