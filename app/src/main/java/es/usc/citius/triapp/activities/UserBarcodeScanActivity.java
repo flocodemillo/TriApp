@@ -12,6 +12,8 @@ import com.google.zxing.integration.android.IntentIntegrator;
 import com.google.zxing.integration.android.IntentResult;
 
 import es.usc.citius.triapp.R;
+import es.usc.citius.triapp.data.Patient;
+import es.usc.citius.triapp.data.Patients;
 
 
 public class UserBarcodeScanActivity extends Activity {
@@ -52,9 +54,13 @@ public class UserBarcodeScanActivity extends Activity {
 
 
             //fake data
-            patientName.setText("Name: Fake");
-            patientLastName.setText("Last Name: Patient");
-            patientBirthDate.setText("Birth Date: 01/01/1911");
+            patientName.setText("Fake");
+            patientLastName.setText("Patient");
+            patientBirthDate.setText("01/01/1911");
+
+            Patient patient = new Patient("Fake", "Patient", "01/11/1911", "000000001");
+            //Patient patient = new Patient((String)patientName.getText(), (String)patientLastName.getText(), (String)patientBirthDate.getText(), (String)contentTxt.getText());
+            Patients.addPatient(patient);
 
 
         }else{

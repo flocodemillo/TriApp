@@ -18,12 +18,15 @@ import java.util.List;
 import es.usc.citius.triapp.R;
 import es.usc.citius.triapp.TriApp;
 import es.usc.citius.triapp.data.Manchester;
+import es.usc.citius.triapp.data.Patient;
+import es.usc.citius.triapp.data.Patients;
 import es.usc.citius.triapp.data.manchester.Discriminator;
 import es.usc.citius.triapp.data.manchester.FlowChart;
 
 public class ReportFragment extends Fragment {
 
     private static final String TAG = "ReportFragment";
+    private Patient patient;
 
     //OnHeadlineSelectedListener mCallback;
 
@@ -97,6 +100,23 @@ public class ReportFragment extends Fragment {
                 createAndShowAlertDialog();
             }
         });
+
+        if ( (patient = Patients.getPatientbyName("Fake")) != null ) {
+
+            TextView patientName = (TextView) getView().findViewById(R.id.patient_name);
+            patientName.setText(String.format("Name: %s", patient.getName()));
+            TextView patientLastName = (TextView) getView().findViewById(R.id.patient_lastName);
+            patientLastName.setText(String.format("Last name: %s", patient.getLastName()));
+            TextView patientBirthDate = (TextView) getView().findViewById(R.id.patient_birthDate);
+            patientBirthDate.setText(String.format("ID: %s", patient.getBirthDate()));
+            TextView patientID = (TextView) getView().findViewById(R.id.patient_id);
+            patientID.setText(String.format("Bird date: %s", patient.getID()));
+        } else {
+            TextView patientName = (TextView) getView().findViewById(R.id.patient_name);
+            patientName.setText(String.format("Not patient associete"));
+
+        }
+
 
     }
 

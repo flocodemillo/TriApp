@@ -18,6 +18,7 @@ import es.usc.citius.triapp.activities.StartTriageActivity;
 import es.usc.citius.triapp.activities.UserBarcodeScanActivity;
 import es.usc.citius.triapp.data.Manchester;
 import es.usc.citius.triapp.activities.FlowChartIndexActivity;
+import es.usc.citius.triapp.data.Patients;
 import es.usc.citius.triapp.fragments.FragmentDrawer;
 import es.usc.citius.triapp.fragments.HomeFragment;
 
@@ -44,6 +45,9 @@ public class TriApp extends AppCompatActivity implements FragmentDrawer.Fragment
 
         // Inicializa datos algoritmo triaje
         Manchester.getInstance(getApplicationContext());
+
+        //Inicializa datos pacientes
+        Patients.getInstance();
     }
 
     @Override
