@@ -20,13 +20,13 @@ import es.usc.citius.triapp.TriApp;
 import es.usc.citius.triapp.data.Manchester;
 import es.usc.citius.triapp.data.Patient;
 import es.usc.citius.triapp.data.Patients;
+import es.usc.citius.triapp.data.TriageResult;
 import es.usc.citius.triapp.data.manchester.Discriminator;
 import es.usc.citius.triapp.data.manchester.FlowChart;
 
 public class ReportFragment extends Fragment {
 
     private static final String TAG = "ReportFragment";
-    private Patient patient;
 
     //OnHeadlineSelectedListener mCallback;
 
@@ -101,19 +101,22 @@ public class ReportFragment extends Fragment {
             }
         });
 
-        if ( (patient = Patients.getPatientbyName("Fake")) != null ) {
 
+        if ( (Patients.getCurrentPatient() != null)) {
+
+            Patient patient = Patients.getCurrentPatient();
             TextView patientName = (TextView) getView().findViewById(R.id.patient_name);
             patientName.setText(String.format("Name: %s", patient.getName()));
-            TextView patientLastName = (TextView) getView().findViewById(R.id.patient_lastName);
-            patientLastName.setText(String.format("Last name: %s", patient.getLastName()));
-            TextView patientBirthDate = (TextView) getView().findViewById(R.id.patient_birthDate);
-            patientBirthDate.setText(String.format("ID: %s", patient.getBirthDate()));
+            TextView patientLastName = (TextView) getView().findViewById(R.id.patient_telephone);
+            patientLastName.setText(String.format("Telephone: %s", patient.getTelephone()));
+            TextView patientBirthDate = (TextView) getView().findViewById(R.id.patient_mail);
+            patientBirthDate.setText(String.format("Mail: %s", patient.getMail()));
             TextView patientID = (TextView) getView().findViewById(R.id.patient_id);
-            patientID.setText(String.format("Bird date: %s", patient.getID()));
+            patientID.setText(String.format("ID: %s", patient.getID()));
+
         } else {
             TextView patientName = (TextView) getView().findViewById(R.id.patient_name);
-            patientName.setText(String.format("Not patient associete"));
+            patientName.setText(R.string.patient_not_found);
 
         }
 

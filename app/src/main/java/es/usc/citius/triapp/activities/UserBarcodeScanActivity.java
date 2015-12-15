@@ -50,17 +50,24 @@ public class UserBarcodeScanActivity extends Activity {
             String scanContent = scanningResult.getContents();
             String scanFormat = scanningResult.getFormatName();
             formatTxt.setText(String.format("Format: %s", scanFormat));
-            contentTxt.setText(String.format("Content: %s", scanContent));
+            //contentTxt.setText(String.format("Content: %s", scanContent));
 
+            String[] parse = scanContent.split(";");
 
             //fake data
-            patientName.setText("Fake");
-            patientLastName.setText("Patient");
-            patientBirthDate.setText("01/01/1911");
+            String[] parseName = parse[0].split(":");
+            patientName.setText(String.format("%s: %s", parseName[1], parseName[2]));
+            String[] parseTelephone = parse[1].split(":");
+            patientLastName.setText(parse[1]);
+            String[] parseMail = parse[2].split(":");
+            patientBirthDate.setText(parse[2]);
 
-            Patient patient = new Patient("Fake", "Patient", "01/11/1911", "000000001");
+
+            Patient patient = new Patient(parseName[2],parseTelephone[1],parseMail[1],"1");
+            //Patient patient = new Patient("Fake", "Patient", "01/11/1911", "000000001");
             //Patient patient = new Patient((String)patientName.getText(), (String)patientLastName.getText(), (String)patientBirthDate.getText(), (String)contentTxt.getText());
             Patients.addPatient(patient);
+            Patients.setCurrentPatient(patient);
 
 
         }else{
