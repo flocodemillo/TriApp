@@ -18,9 +18,9 @@ import java.util.List;
 import es.usc.citius.triapp.R;
 import es.usc.citius.triapp.TriApp;
 import es.usc.citius.triapp.data.Manchester;
-import es.usc.citius.triapp.data.Patient;
+import es.usc.citius.triapp.data.patients.Patient;
 import es.usc.citius.triapp.data.Patients;
-import es.usc.citius.triapp.data.TriageResult;
+import es.usc.citius.triapp.data.patients.TriageResult;
 import es.usc.citius.triapp.data.manchester.Discriminator;
 import es.usc.citius.triapp.data.manchester.FlowChart;
 
@@ -78,7 +78,7 @@ public class ReportFragment extends Fragment {
         TextView name = (TextView)getView().findViewById(R.id.name);
         name.setText(String.format("Flowchar: %s", flowchart.getNombre()));
 
-        TextView level = (TextView)getView().findViewById(R.id.level);
+        final TextView level = (TextView)getView().findViewById(R.id.level);
         if (nivel == 0)
             level.setText(R.string.level_red);
         if (nivel == 1)
@@ -90,7 +90,7 @@ public class ReportFragment extends Fragment {
         if (nivel == 4)
             level.setText(R.string.level_blue);
 
-        TextView elapsedTime = (TextView)getView().findViewById(R.id.elapsedTime);
+        final TextView elapsedTime = (TextView)getView().findViewById(R.id.elapsedTime);
         elapsedTime.setText(String.format("Elapsed time: %ds", Manchester.getElapsedTime(System.currentTimeMillis())));
 
         Button button = (Button) getView().findViewById(R.id.endTriage);
@@ -119,6 +119,19 @@ public class ReportFragment extends Fragment {
             patientName.setText(R.string.patient_not_found);
 
         }
+
+        //Guarda los datos del triaje
+        Button saveButton = (Button) getView().findViewById(R.id.saveReport);
+        saveButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                TriageResult result = new TriageResult((String)level.getText(), (String)elapsedTime.getText());
+                if ( (Patients.getCurrentPatient() != null)) {
+                    Patient patient = Patients.getCurrentPatient();
+                    patient.setResult(result);
+                }
+            }
+        });
 
 
     }

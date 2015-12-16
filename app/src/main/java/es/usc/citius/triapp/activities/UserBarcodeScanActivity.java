@@ -12,13 +12,16 @@ import com.google.zxing.integration.android.IntentIntegrator;
 import com.google.zxing.integration.android.IntentResult;
 
 import es.usc.citius.triapp.R;
-import es.usc.citius.triapp.data.Patient;
+import es.usc.citius.triapp.data.patients.Patient;
 import es.usc.citius.triapp.data.Patients;
 
 
 public class UserBarcodeScanActivity extends Activity {
 
-    private TextView formatTxt, contentTxt, patientName, patientLastName, patientBirthDate;
+    private TextView formatTxt;
+    private TextView patientName;
+    private TextView patientLastName;
+    private TextView patientBirthDate;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,7 +30,7 @@ public class UserBarcodeScanActivity extends Activity {
 
         //Button scanBtn = (Button) findViewById(R.id.scan_button);
         formatTxt = (TextView)findViewById(R.id.scan_format);
-        contentTxt = (TextView)findViewById(R.id.scan_content);
+        //TextView contentTxt = (TextView) findViewById(R.id.scan_content);
         patientName = (TextView)findViewById(R.id.patient_name);
         patientLastName = (TextView)findViewById(R.id.patient_lastName);
         patientBirthDate = (TextView)findViewById(R.id.patient_birthDate);

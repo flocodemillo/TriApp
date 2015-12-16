@@ -4,10 +4,11 @@ package es.usc.citius.triapp.data;
 import java.util.ArrayList;
 import java.util.List;
 
+import es.usc.citius.triapp.data.patients.Patient;
+
 public class Patients {
     private static Patients instance;
     private static List<Patient> patients = new ArrayList<>();
-    //private static List<TriageResult> result = new ArrayList<>();
     private static Patient currentPatient = null;
 
     protected Patients() {
