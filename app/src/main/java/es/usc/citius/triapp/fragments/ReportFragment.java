@@ -71,6 +71,7 @@ public class ReportFragment extends Fragment {
                     Log.v(TAG, "Final: " + Manchester.getCurrentLevel() + " / " + question.getDiscriminator() + " / " + question.getAnswer() + "/" + question.getDescription());
                     TextView description = (TextView)getView().findViewById(R.id.description);
                     description.setText(String.format("Description: %s", info));
+                    question.setAnswer(false);
                 }
             }
         }

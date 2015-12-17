@@ -6,6 +6,7 @@ import android.support.design.widget.TabLayout;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
+import android.view.View;
 import android.widget.TextView;
 
 import org.w3c.dom.Text;
@@ -66,5 +67,9 @@ public class StartTriageActivity extends AppCompatActivity implements Discrimina
         startActivity(intent);
 
     }*/
+
+    public void endTriage(View view) {
+
+    }
 
 }

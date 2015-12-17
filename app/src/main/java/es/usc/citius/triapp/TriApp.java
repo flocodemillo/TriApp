@@ -8,9 +8,11 @@ import android.support.v4.app.FragmentTransaction;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.TextView;
 import android.widget.Toast;
 
 
@@ -27,6 +29,8 @@ import es.usc.citius.triapp.fragments.FragmentDrawer;
 
 
 public class TriApp extends AppCompatActivity implements FragmentDrawer.FragmentDrawerListener {
+
+    private static final String TAG = "TriApp";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -117,10 +121,15 @@ public class TriApp extends AppCompatActivity implements FragmentDrawer.Fragment
     }
 
     public void startTriage(View view) {
-        // Do something in response to button
+
+        TextView name = (TextView) view.findViewById(R.id.name);
+        Log.v(TAG, "Name: " + name.getText());
+
+        //Todo: Usar busqueda de paciente por ID en vez de por nombre
+        Patients.setCurrentPatient(Patients.getPatientbyName((String) name.getText()));
+
         Intent intent = new Intent(this, FlowChartIndexActivity.class);
         startActivity(intent);
-
     }
 
     public void starUserScan(View view) {
@@ -130,6 +139,7 @@ public class TriApp extends AppCompatActivity implements FragmentDrawer.Fragment
 
     public void addPatient(View v){
         //if(v.getId()==R.id.scan_button){
+
         IntentIntegrator scanIntegrator = new IntentIntegrator(this);
         scanIntegrator.initiateScan();
         //}

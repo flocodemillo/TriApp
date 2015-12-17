@@ -46,7 +46,6 @@ public class FlowChartDescriptionFragment extends Fragment {
             //Obtener el número de orden en la lista del elemento seleccionado por el usuario
             int index = Integer.valueOf(getArguments().getString(ARG_ITEM_ID));
             //Obtener la persona que se se encuentra en esa posición de la lista
-            //person = (Person)PersonContent.getPersonList().get(index);
             flowchart = (FlowChart)Manchester.getFlowchartList().get(index);
         }
     }

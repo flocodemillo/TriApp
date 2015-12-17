@@ -11,7 +11,6 @@ import java.util.List;
 
 import es.usc.citius.triapp.R;
 import es.usc.citius.triapp.data.patients.Patient;
-import es.usc.citius.triapp.model.Person;
 
 public class PatientAdapter extends RecyclerView.Adapter<PatientAdapter.PersonViewHolder> {
 
@@ -29,12 +28,9 @@ public class PatientAdapter extends RecyclerView.Adapter<PatientAdapter.PersonVi
         }
     }
 
-    //List<Person> persons;
     private List<Patient> patients;
 
     public PatientAdapter(List<Patient> patients){
-    //public PatientAdapter(List<Person> persons){
-        //this.persons = persons;
         this.patients = patients;
     }
 
