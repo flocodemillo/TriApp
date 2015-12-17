@@ -12,6 +12,7 @@ import com.google.zxing.integration.android.IntentIntegrator;
 import com.google.zxing.integration.android.IntentResult;
 
 import es.usc.citius.triapp.R;
+import es.usc.citius.triapp.TriApp;
 import es.usc.citius.triapp.data.patients.Patient;
 import es.usc.citius.triapp.data.Patients;
 
@@ -77,6 +78,13 @@ public class UserBarcodeScanActivity extends Activity {
             Toast toast = Toast.makeText(getApplicationContext(), "No data", Toast.LENGTH_SHORT);
             toast.show();
         }
+    }
+
+    public void goHome(View v){
+        //if(v.getId()==R.id.scan_button){
+        Intent intent = new Intent(this, TriApp.class);
+        startActivity(intent);
+        //}
     }
 
 }

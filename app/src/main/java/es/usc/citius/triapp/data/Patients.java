@@ -27,6 +27,7 @@ public class Patients {
     }
     public static void setCurrentPatient (Patient patient) { currentPatient = patient;}
     public static Patient getCurrentPatient(){return currentPatient;}
+    public static List<Patient> getPatients(){return patients;}
 
 
     public static Patient getPatientbyName(String name) {
