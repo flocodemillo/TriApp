@@ -53,7 +53,7 @@ public class FlowChartIndexActivity extends Activity//FragmentActivity
         }
 
         //Empieza a contar el tiempo de triaje
-        Manchester.setStartTime(System.currentTimeMillis());
+        //Manchester.setStartTime(System.currentTimeMillis());
     }
 
     /**

@@ -9,6 +9,7 @@ public class Patient {
     private String mail;
     private String telephone;
     private String id;
+    private long startTime;
 
     //private String birthDate; 
     private List<TriageResult> result = new ArrayList<>();
@@ -24,6 +25,12 @@ public class Patient {
     public String getMail() {return this.mail;}
     public String getID() {return this.id;}
     public String getTelephone() {return this.telephone;}
+    public void setStartTime(long startTime) {this.startTime=startTime;}
+
+    public long getElapsedTime(long currentTime) {
+        return (currentTime - startTime)/1000;
+    }
+
     public void setResult(TriageResult result) {
         this.result.add(result);
     }

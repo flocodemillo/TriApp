@@ -30,6 +30,7 @@
     <string name="level_yellow">Level: Yellow</string>
     <string name="level_green">Level: Green</string>
     <string name="level_blue">Level: Blue</string>
+    <string name="red">PRUEBA</string>
     <string name="triar">Triar</string>
     <string name="button_select_workflow">Select a workflow</string>
     <string name="subtitle_home"><![CDATA[XML del fragment -> fragment_home.xml]]></string>

@@ -1,11 +1,20 @@
 package es.usc.citius.triapp.adapters;
 
+import android.content.Context;
+import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
+import android.text.Spannable;
+import android.text.SpannableString;
+import android.text.SpannableStringBuilder;
+import android.text.Spanned;
+import android.text.style.DynamicDrawableSpan;
+import android.text.style.ImageSpan;
 import android.util.Log;
 
+import es.usc.citius.triapp.R;
 import es.usc.citius.triapp.fragments.BlueLevelFragment;
 import es.usc.citius.triapp.fragments.LevelFragment;
 import es.usc.citius.triapp.data.Manchester;
@@ -20,8 +29,15 @@ public class SlideLevelAdapter extends FragmentPagerAdapter {
     private static final String TAG = "SlideLevelAdapter";
     private static int levels;
 
-    public SlideLevelAdapter(FragmentManager fm, int currentWorkFlow) {
+    Drawable myDrawable;
+    String title;
+    Context c;
+
+    public SlideLevelAdapter(FragmentManager fm, int currentWorkFlow, Context c) {
         super(fm);
+        //Empieza a contar el tiempo de triaje
+        this.c = c;
+        Manchester.setStartTime(System.currentTimeMillis());
         Manchester.setCurrentWorkFlow(currentWorkFlow);
         Manchester.setCurrentLevel(4); //El nivel de gravedad por defecto es 4 = azul
         FlowChart flowchart = Manchester.getCurrentWorkFlow();
@@ -106,7 +122,49 @@ public class SlideLevelAdapter extends FragmentPagerAdapter {
     }
 
     public CharSequence getPageTitle(int position) {
-        return titulo[position];
+
+        // Añadido en styles.xml <item name="textAllCaps">false</item> si no no funcionan las imagenes
+
+
+       switch (position) {
+            case 0:
+
+                myDrawable = c.getDrawable(R.drawable.ic_trending_flat_black_24dp);
+                title = c.getString(R.string.red);
+                break;
+            case 1:
+                myDrawable = c.getDrawable(R.drawable.ic_trending_flat_black_24dp);
+                title = c.getString(R.string.red);
+                break;
+            case 2:
+                myDrawable = c.getDrawable(R.drawable.ic_trending_flat_black_24dp);
+                title = c.getString(R.string.red);
+                break;
+            case 3:
+                myDrawable = c.getDrawable(R.drawable.ic_trending_flat_black_24dp);
+                title = c.getString(R.string.red);
+                break;
+            case 4:
+                myDrawable = c.getDrawable(R.drawable.ic_trending_flat_black_24dp);
+                title = c.getString(R.string.red);
+                break;
+           case 5:
+               myDrawable = c.getDrawable(R.drawable.ic_action_add);
+               title = c.getString(R.string.red);
+               break;
+            default:
+                break;
+        }
+
+        SpannableStringBuilder sb = new SpannableStringBuilder(" " + titulo[position]); // space added before text for convenience
+
+        myDrawable.setBounds(0, 0, myDrawable.getIntrinsicWidth(), myDrawable.getIntrinsicHeight());
+        ImageSpan span = new ImageSpan(myDrawable, ImageSpan.ALIGN_BASELINE);
+        sb.setSpan(span, 0, 1, Spanned.SPAN_EXCLUSIVE_EXCLUSIVE);
+
+        return sb;
+
+        //return titulo[position];
     }
 
 }

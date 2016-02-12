@@ -49,6 +49,7 @@ public class PatientAdapter extends RecyclerView.Adapter<PatientAdapter.PersonVi
     public void onBindViewHolder(PersonViewHolder personViewHolder, int i) {
         personViewHolder.personName.setText(patients.get(i).getName());
         personViewHolder.personAge.setText(patients.get(i).getMail());
+        //personViewHolder.personAge.setText((int) patients.get(i).getElapsedTime(System.currentTimeMillis()));
     }
 
     @Override

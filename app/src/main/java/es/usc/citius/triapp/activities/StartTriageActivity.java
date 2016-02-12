@@ -39,7 +39,7 @@ public class StartTriageActivity extends AppCompatActivity implements Discrimina
 
         int id= getIntent().getExtras().getInt("id");
 
-        SlideLevelAdapter mAdapter = new SlideLevelAdapter(getSupportFragmentManager(), id);
+        SlideLevelAdapter mAdapter = new SlideLevelAdapter(getSupportFragmentManager(), id, getApplicationContext());
 
         viewPager.setAdapter(mAdapter);
 
@@ -52,21 +52,6 @@ public class StartTriageActivity extends AppCompatActivity implements Discrimina
         tabLayout.setupWithViewPager(viewPager);
     }
 
-    /*public void endTriage(View view) {
-        Intent intent = new Intent(this, TriApp.class);
-        List<Discriminator> questions = (Manchester.getCurrentWorkFlow()).getLevel(Manchester.getCurrentLevel()).getDiscriminators();
-        for (Discriminator question : questions) {
-            if (question.getAnswer()) {
-                question.setAnswer(Boolean.FALSE);
-            }
-        }
-
-        Manchester.setStartTime(0);
-
-        this.finish();
-        startActivity(intent);
-
-    }*/
 
     public void endTriage(View view) {
 

@@ -20,7 +20,8 @@
         android:src="@drawable/ic_action_add"
         android:onClick="addPatient"
         app:layout_anchor="@id/rv"
-        app:layout_anchorGravity="bottom|right|start"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
         />
 
 </RelativeLayout>

@@ -171,6 +171,7 @@ public class TriApp extends AppCompatActivity implements FragmentDrawer.Fragment
                 //Patient patient = new Patient((String)patientName.getText(), (String)patientLastName.getText(), (String)patientBirthDate.getText(), (String)contentTxt.getText());
                 Patients.addPatient(patient);
                 Patients.setCurrentPatient(patient);
+                //patient.setStartTime(System.currentTimeMillis());
             }
 
         }else{
