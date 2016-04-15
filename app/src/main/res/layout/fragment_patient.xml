@@ -43,6 +43,30 @@
             android:layout_below="@+id/name"
             android:layout_toEndOf="@+id/image" />
 
+        <ImageButton
+            android:id="@+id/save"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:scaleType="centerCrop"
+            android:clickable="true"
+            android:contentDescription="@string/save_patient"
+            android:src="@drawable/ic_action_save"
+            />
+
+        <ImageButton
+            android:id="@+id/edit"
+            android:layout_below="@+id/save"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:scaleType="centerCrop"
+            android:clickable="true"
+            android:contentDescription="@string/edit_patient"
+            android:src="@drawable/ic_action_edit"
+
+            />
+
     </RelativeLayout>
 
 </android.support.v7.widget.CardView>

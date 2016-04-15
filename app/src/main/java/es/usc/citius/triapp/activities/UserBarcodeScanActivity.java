@@ -67,7 +67,7 @@ public class UserBarcodeScanActivity extends Activity {
             patientBirthDate.setText(parse[2]);
 
 
-            Patient patient = new Patient(parseName[2],parseTelephone[1],parseMail[1],"1");
+            Patient patient = new Patient(parseName[2],parseTelephone[1],parseMail[1],"1",true);
             //Patient patient = new Patient("Fake", "Patient", "01/11/1911", "000000001");
             //Patient patient = new Patient((String)patientName.getText(), (String)patientLastName.getText(), (String)patientBirthDate.getText(), (String)contentTxt.getText());
             Patients.addPatient(patient);

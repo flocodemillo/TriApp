@@ -51,13 +51,13 @@ public class SlideLevelAdapter extends FragmentPagerAdapter {
         switch (levels) {
 
             case 4:
-                titulo[0] = "RED";
+                titulo[0] = "RED1........................................................................";
                 titulo[1] = "ORANGE";
                 titulo[2] = "BLUE";
                 titulo[3] = "REPORT";
                 break;
             case 5:
-                titulo[0] = "RED";
+                titulo[0] = "RED2........................................................................";
                 titulo[1] = "ORANGE";
                 titulo[2] = "YELLOW";
                 titulo[3] = "BLUE";
@@ -161,7 +161,6 @@ public class SlideLevelAdapter extends FragmentPagerAdapter {
         myDrawable.setBounds(0, 0, myDrawable.getIntrinsicWidth(), myDrawable.getIntrinsicHeight());
         ImageSpan span = new ImageSpan(myDrawable, ImageSpan.ALIGN_BASELINE);
         sb.setSpan(span, 0, 1, Spanned.SPAN_EXCLUSIVE_EXCLUSIVE);
-
         return sb;
 
         //return titulo[position];

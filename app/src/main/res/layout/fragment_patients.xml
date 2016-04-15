@@ -5,7 +5,18 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:padding="16dp">
 
+    <TextView
+        android:id="@+id/patient_list"
+        android:layout_alignParentTop="true"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:textSize="45sp"
+        android:text="@string/lista_pacientes"
+        android:textStyle="bold" />
+
     <android.support.v7.widget.RecyclerView
+        android:layout_below="@id/patient_list"
         android:layout_height="match_parent"
         android:layout_width="match_parent"
         android:id="@+id/rv">

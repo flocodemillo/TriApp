@@ -24,6 +24,7 @@ import es.usc.citius.triapp.data.Manchester;
 import es.usc.citius.triapp.activities.FlowChartIndexActivity;
 import es.usc.citius.triapp.data.Patients;
 import es.usc.citius.triapp.data.patients.Patient;
+import es.usc.citius.triapp.fragments.HomeFragment;
 import es.usc.citius.triapp.fragments.PatientsFragment;
 import es.usc.citius.triapp.fragments.FragmentDrawer;
 
@@ -55,6 +56,11 @@ public class TriApp extends AppCompatActivity implements FragmentDrawer.Fragment
 
         //Inicializa datos pacientes
         Patients.getInstance();
+
+        //Creo paciente fake para pruebas
+        /*Patient patient = new Patient("Fake", "Patient", "01/11/1911", "000000001");
+        Patients.addPatient(patient);
+        Patients.setCurrentPatient(patient);*/
     }
 
     @Override
@@ -99,6 +105,7 @@ public class TriApp extends AppCompatActivity implements FragmentDrawer.Fragment
                 title = getString(R.string.title_home);
                 break;
             case 1:
+                fragment = new HomeFragment();
                 title = getString(R.string.title_friends);
                 break;
             case 2:
@@ -145,6 +152,11 @@ public class TriApp extends AppCompatActivity implements FragmentDrawer.Fragment
         //}
     }
 
+    public void savePatient(View v){
+        finish();
+        startActivity(getIntent());
+    }
+
     @Override
     public void onActivityResult(int requestCode, int resultCode, Intent intent) {
         IntentResult scanningResult = IntentIntegrator.parseActivityResult(requestCode, resultCode, intent);
@@ -166,7 +178,7 @@ public class TriApp extends AppCompatActivity implements FragmentDrawer.Fragment
                 //patientBirthDate.setText(parse[2]);
 
 
-                Patient patient = new Patient(parseName[2], parseTelephone[1], parseMail[1], "1");
+                Patient patient = new Patient(parseName[2], parseTelephone[1], parseMail[1], "1", true);
                 //Patient patient = new Patient("Fake", "Patient", "01/11/1911", "000000001");
                 //Patient patient = new Patient((String)patientName.getText(), (String)patientLastName.getText(), (String)patientBirthDate.getText(), (String)contentTxt.getText());
                 Patients.addPatient(patient);

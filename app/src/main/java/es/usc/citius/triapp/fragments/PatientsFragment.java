@@ -10,9 +10,13 @@ import android.view.View;
 import android.view.ViewGroup;
 
 
+import java.util.Iterator;
+import java.util.List;
+
 import es.usc.citius.triapp.R;
 import es.usc.citius.triapp.adapters.PatientAdapter;
 import es.usc.citius.triapp.data.Patients;
+import es.usc.citius.triapp.data.patients.Patient;
 
 
 public class PatientsFragment extends Fragment {
@@ -53,8 +57,16 @@ public class PatientsFragment extends Fragment {
         rv.setHasFixedSize(true);
 
 
-        PatientAdapter adapter = new PatientAdapter(Patients.getPatients());
+        List<Patient> patients = Patients.getPatients();
 
+        for (Iterator<Patient> patient = patients.iterator(); patient.hasNext();) {
+            Patient paciente = patient.next();
+            if (paciente.getShow().equals(false)) {
+                patient.remove();
+            }
+        }
+
+        PatientAdapter adapter = new PatientAdapter(patients);
         rv.setAdapter(adapter);
     }
 

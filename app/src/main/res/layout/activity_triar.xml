@@ -44,7 +44,7 @@
             android:id="@+id/toolbarlayout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            app:tabMode="fixed"
+            app:tabMode="scrollable"
             app:tabGravity="fill"
             app:tabTextColor="@color/colorTabText"
             app:tabSelectedTextColor="@color/colorTabSelected"
