@@ -129,23 +129,23 @@ public class SlideLevelAdapter extends FragmentPagerAdapter {
        switch (position) {
             case 0:
 
-                myDrawable = c.getDrawable(R.drawable.ic_trending_flat_black_24dp);
+                myDrawable = c.getDrawable(R.drawable.ic_arrow_black);
                 title = c.getString(R.string.red);
                 break;
             case 1:
-                myDrawable = c.getDrawable(R.drawable.ic_trending_flat_black_24dp);
+                myDrawable = c.getDrawable(R.drawable.ic_arrow_black);
                 title = c.getString(R.string.red);
                 break;
             case 2:
-                myDrawable = c.getDrawable(R.drawable.ic_trending_flat_black_24dp);
+                myDrawable = c.getDrawable(R.drawable.ic_arrow_black);
                 title = c.getString(R.string.red);
                 break;
             case 3:
-                myDrawable = c.getDrawable(R.drawable.ic_trending_flat_black_24dp);
+                myDrawable = c.getDrawable(R.drawable.ic_arrow_black);
                 title = c.getString(R.string.red);
                 break;
             case 4:
-                myDrawable = c.getDrawable(R.drawable.ic_trending_flat_black_24dp);
+                myDrawable = c.getDrawable(R.drawable.ic_arrow_black);
                 title = c.getString(R.string.red);
                 break;
            case 5:
