@@ -126,7 +126,7 @@ public class SlideLevelAdapter extends FragmentPagerAdapter {
         // Añadido en styles.xml <item name="textAllCaps">false</item> si no no funcionan las imagenes
 
 
-       switch (position) {
+       /*switch (position) {
             case 0:
 
                 myDrawable = c.getDrawable(R.drawable.ic_action_edit);
@@ -146,6 +146,23 @@ public class SlideLevelAdapter extends FragmentPagerAdapter {
                 break;
             case 4:
                 myDrawable = c.getDrawable(R.drawable.ic_action_edit);
+                myDrawable = c.getDrawable(R.drawable.ic_arrow_black);
+                title = c.getString(R.string.red);
+                break;
+            case 1:
+                myDrawable = c.getDrawable(R.drawable.ic_arrow_black);
+                title = c.getString(R.string.red);
+                break;
+            case 2:
+                myDrawable = c.getDrawable(R.drawable.ic_arrow_black);
+                title = c.getString(R.string.red);
+                break;
+            case 3:
+                myDrawable = c.getDrawable(R.drawable.ic_arrow_black);
+                title = c.getString(R.string.red);
+                break;
+            case 4:
+                myDrawable = c.getDrawable(R.drawable.ic_arrow_black);
                 title = c.getString(R.string.red);
                 break;
            case 5:
@@ -154,7 +171,8 @@ public class SlideLevelAdapter extends FragmentPagerAdapter {
                break;
             default:
                 break;
-        }
+        }*/
+
 
         SpannableStringBuilder sb = new SpannableStringBuilder(" " + titulo[position]); // space added before text for convenience
 
