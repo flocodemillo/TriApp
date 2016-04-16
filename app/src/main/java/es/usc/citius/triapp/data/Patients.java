@@ -24,6 +24,7 @@ public class Patients {
 
     public static void addPatient (Patient patient) {
         patients.add(patient);
+        System.out.println("Añadido nuevo paciente\n");
     }
     public static void setCurrentPatient (Patient patient) { currentPatient = patient;}
     public static Patient getCurrentPatient(){return currentPatient;}

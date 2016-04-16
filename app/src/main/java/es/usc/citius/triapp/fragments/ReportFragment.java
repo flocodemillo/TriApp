@@ -27,6 +27,14 @@ import es.usc.citius.triapp.data.manchester.FlowChart;
 public class ReportFragment extends Fragment {
 
     private static final String TAG = "ReportFragment";
+    private String nameFlowchart;
+    private int rLevel;
+    private String rDiscriminator;
+    private String rDescription;
+    private long rElapsed;
+    private String pName;
+    private String pTelephone;
+    private String pMail;
 
     //OnHeadlineSelectedListener mCallback;
 
@@ -44,6 +52,7 @@ public class ReportFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
 
+
         View V = inflater.inflate(R.layout.fragment_report, container, false);
 
         return inflater.inflate(R.layout.fragment_report, container, false);
@@ -58,6 +67,7 @@ public class ReportFragment extends Fragment {
 
         FlowChart flowchart = Manchester.getCurrentWorkFlow();
         int nivel = Manchester.getCurrentLevel();
+        
 
         if (nivel != 4) {
             List<Discriminator> questions = (Manchester.getCurrentWorkFlow()).getLevel(Manchester.getCurrentLevel()).getDiscriminators();
@@ -72,12 +82,20 @@ public class ReportFragment extends Fragment {
                     TextView description = (TextView)getView().findViewById(R.id.description);
                     description.setText(String.format("Description: %s", info));
                     question.setAnswer(false);
+
+                    rDiscriminator = question.getDiscriminator();
+                    rDescription = question.getDescription();
                 }
             }
         }
 
         TextView name = (TextView)getView().findViewById(R.id.name);
         name.setText(String.format("Flowchar: %s", flowchart.getNombre()));
+        nameFlowchart = flowchart.getNombre();
+        rLevel = Manchester.getCurrentLevel();
+        rElapsed = Manchester.getElapsedTime(System.currentTimeMillis());
+
+        
 
         final TextView level = (TextView)getView().findViewById(R.id.level);
         if (nivel == 0)
@@ -114,6 +132,10 @@ public class ReportFragment extends Fragment {
             patientBirthDate.setText(String.format("Mail: %s", patient.getMail()));
             TextView patientID = (TextView) getView().findViewById(R.id.patient_id);
             patientID.setText(String.format("ID: %s", patient.getID()));
+            
+            pName = patient.getName();
+            pMail = patient.getMail();
+            pTelephone = patient.getTelephone();
 
         } else {
             TextView patientName = (TextView) getView().findViewById(R.id.patient_name);
@@ -126,11 +148,17 @@ public class ReportFragment extends Fragment {
         saveButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                TriageResult result = new TriageResult((String)level.getText(), (String)elapsedTime.getText());
-                if ( (Patients.getCurrentPatient() != null)) {
+
+                TriageResult result = new TriageResult(nameFlowchart, rLevel, rDiscriminator, rDescription, rElapsed);
+                Patients.getCurrentPatient().addResult(result);
+                //Patient.addResult(result);
+                Log.v(TAG, "Size Resultados: " + Patients.getCurrentPatient().getResults().size());
+
+
+                /*if ( (Patients.getCurrentPatient() != null)) {
                     Patient patient = Patients.getCurrentPatient();
                     patient.setResult(result);
-                }
+                }*/
             }
         });
 
@@ -145,6 +173,8 @@ public class ReportFragment extends Fragment {
             public void onClick(DialogInterface dialog, int id) {
 
                 Intent intent = new Intent(getActivity(), TriApp.class);
+
+                Patients.getCurrentPatient().setTriaged(true);
 
                 if (Manchester.getCurrentLevel() != 4) {
                     List<Discriminator> questions = (Manchester.getCurrentWorkFlow()).getLevel(Manchester.getCurrentLevel()).getDiscriminators();

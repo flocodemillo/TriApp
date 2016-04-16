@@ -19,12 +19,14 @@ import android.widget.Toast;
 import com.google.zxing.integration.android.IntentIntegrator;
 import com.google.zxing.integration.android.IntentResult;
 
+import es.usc.citius.triapp.activities.StepSample;
 import es.usc.citius.triapp.activities.UserBarcodeScanActivity;
 import es.usc.citius.triapp.data.Manchester;
 import es.usc.citius.triapp.activities.FlowChartIndexActivity;
 import es.usc.citius.triapp.data.Patients;
 import es.usc.citius.triapp.data.patients.Patient;
 import es.usc.citius.triapp.fragments.HomeFragment;
+import es.usc.citius.triapp.fragments.InformationDialogFragment;
 import es.usc.citius.triapp.fragments.PatientsFragment;
 import es.usc.citius.triapp.fragments.FragmentDrawer;
 
@@ -101,6 +103,7 @@ public class TriApp extends AppCompatActivity implements FragmentDrawer.Fragment
         switch (position) {
             case 0:
                 //fragment = new HomeFragment();
+                //fragment = new HomeFragment();
                 fragment = new PatientsFragment();
                 title = getString(R.string.title_home);
                 break;
@@ -110,6 +113,7 @@ public class TriApp extends AppCompatActivity implements FragmentDrawer.Fragment
                 break;
             case 2:
                 //fragment = new MessagesFragment();
+                startActivity(new Intent(this, StepSample.class));
                 title = getString(R.string.title_messages);
                 break;
             default:
@@ -157,6 +161,12 @@ public class TriApp extends AppCompatActivity implements FragmentDrawer.Fragment
         startActivity(getIntent());
     }
 
+    public void addInfo(View v){
+        InformationDialogFragment info = new InformationDialogFragment();
+        info.show(getFragmentManager(),"dsadsds");
+
+    }
+
     @Override
     public void onActivityResult(int requestCode, int resultCode, Intent intent) {
         IntentResult scanningResult = IntentIntegrator.parseActivityResult(requestCode, resultCode, intent);
@@ -178,7 +188,7 @@ public class TriApp extends AppCompatActivity implements FragmentDrawer.Fragment
                 //patientBirthDate.setText(parse[2]);
 
 
-                Patient patient = new Patient(parseName[2], parseTelephone[1], parseMail[1], "1", true);
+                Patient patient = new Patient(parseName[2], parseTelephone[1], parseMail[1], "1", true, false);
                 //Patient patient = new Patient("Fake", "Patient", "01/11/1911", "000000001");
                 //Patient patient = new Patient((String)patientName.getText(), (String)patientLastName.getText(), (String)patientBirthDate.getText(), (String)contentTxt.getText());
                 Patients.addPatient(patient);

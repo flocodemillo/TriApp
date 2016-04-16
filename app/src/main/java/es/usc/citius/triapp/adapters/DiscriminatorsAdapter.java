@@ -65,7 +65,7 @@ public class DiscriminatorsAdapter extends RecyclerView.Adapter<DiscriminatorsAd
         switch (Manchester.getCurrentLevel()) {
 
             case 0:
-                discriminatorViewHolder.rectangle.setBackgroundColor(900);
+                //discriminatorViewHolder.rectangle.setBackgroundColor(900);
                 break;
             case 1:
                 break;

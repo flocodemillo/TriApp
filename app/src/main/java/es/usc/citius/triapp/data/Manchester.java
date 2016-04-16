@@ -27,7 +27,7 @@ public class Manchester {
     private static Entry[] dictionary = null;
     private static Manchester instance = null;
     private static List<FlowChart> workflowList = null;
-    private static int currentWorkFlow;
+    private static int currentWorkFlow = 1;
     private static int currentLevel = 0;
     private static long startTime;
 

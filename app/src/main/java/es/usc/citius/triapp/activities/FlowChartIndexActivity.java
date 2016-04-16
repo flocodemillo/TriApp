@@ -81,7 +81,12 @@ public class FlowChartIndexActivity extends Activity//FragmentActivity
 
     public void startTriage(View view) {
 
-        Intent intent = new Intent(this, StartTriageActivity.class);
+        //
+        Intent intent = new Intent(this, StepSample.class);
+        Manchester.setCurrentWorkFlow(ID);
+        //
+
+        //Intent intent = new Intent(this, StartTriageActivity.class);
         intent.putExtra("id", ID);
         startActivity(intent);
 

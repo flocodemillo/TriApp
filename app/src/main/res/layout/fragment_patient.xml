@@ -38,8 +38,27 @@
             android:paddingLeft="10dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="\nCardView example can have shadows and rounded corners. To set the corner radius use the attribute cardCornerRadius."
             android:id="@+id/description"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@+id/triaged" />
+
+        <TextView
+            android:paddingLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:id="@+id/triaged"
+            android:text="Triado?"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@+id/name" />
+
+
+        <TextView
+            android:paddingLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="\nCardView example can have shadows and rounded corners. To set the corner radius use the attribute cardCornerRadius."
+            android:id="@+id/age"
             android:layout_below="@+id/name"
             android:layout_toEndOf="@+id/image" />
 
@@ -51,7 +70,7 @@
             android:scaleType="centerCrop"
             android:clickable="true"
             android:contentDescription="@string/save_patient"
-            android:src="@drawable/ic_action_save"
+            android:src="@drawable/ic_action_edit"
             />
 
         <ImageButton
