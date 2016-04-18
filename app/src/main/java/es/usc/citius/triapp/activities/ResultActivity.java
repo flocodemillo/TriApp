@@ -48,8 +48,8 @@ public class ResultActivity extends AppCompatActivity {
 
         private void initializeData(){
 
-            persons = new ArrayList<>();
-            persons = Patients.getPatients();
+            //persons = new ArrayList<>();
+            //persons = Patients.getPatients();
             Log.v(TAG, "Size: " + persons.size());
 
             results = Patients.getCurrentPatient().getResults();

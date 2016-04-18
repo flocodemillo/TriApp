@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:text="Nivel del gravedad"
+        android:textColor="#80000000"
+        android:textSize="17sp" />
+
+    <TextView
+        android:id="@+id/fcLevel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:textColor="#000000"
+        android:textSize="20dp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:text="Nombre paciente"
+        android:textColor="#80000000"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/pName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:textColor="#000000"
+        android:textSize="18dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:text="Motivo de consulta"
+        android:textColor="#80000000"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/pDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:textColor="#000000"
+        android:textSize="18dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Flow Chart Name"
+        android:textColor="#80000000"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/fcName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="test1"
+        android:textColor="#000000"
+        android:textSize="18dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:text="Discriminator"
+        android:textColor="#80000000"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/fcDiscriminator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:textColor="#000000"
+        android:textSize="18dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:text="Descripción"
+        android:textColor="#80000000"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/dDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:textColor="#000000"
+        android:textSize="18dp" />
+
+    <TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="18dp"
+    android:text="Comienzo triaje"
+    android:textColor="#80000000"
+    android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:textColor="#000000"
+        android:textSize="18dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:text="Time elpased since start"
+        android:textColor="#80000000"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/elapsedTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:textColor="#000000"
+        android:textSize="18dp" />
+
+
+</LinearLayout>

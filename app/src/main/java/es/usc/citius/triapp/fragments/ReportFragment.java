@@ -11,6 +11,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.FrameLayout;
 import android.widget.TextView;
 
 import java.util.List;
@@ -149,8 +150,8 @@ public class ReportFragment extends Fragment {
             @Override
             public void onClick(View v) {
 
-                TriageResult result = new TriageResult(nameFlowchart, rLevel, rDiscriminator, rDescription, rElapsed);
-                Patients.getCurrentPatient().addResult(result);
+                //TriageResult result = new TriageResult(nameFlowchart, rLevel, rDiscriminator, rDescription, rElapsed);
+                //Patients.getCurrentPatient().addResult(result);
                 //Patient.addResult(result);
                 Log.v(TAG, "Size Resultados: " + Patients.getCurrentPatient().getResults().size());
 
@@ -166,7 +167,9 @@ public class ReportFragment extends Fragment {
     }
 
     private void createAndShowAlertDialog() {
+
         AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
+
         builder.setTitle("Confirm");
         //builder.setTitle(getString(R.string.dialog_confirm));
         builder.setPositiveButton(android.R.string.yes, new DialogInterface.OnClickListener() {

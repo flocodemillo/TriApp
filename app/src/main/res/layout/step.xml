@@ -11,13 +11,5 @@
         android:id="@+id/rv2">
     </android.support.v7.widget.RecyclerView>
 
-    <Button
-        android:id="@+id/button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
-        android:layout_gravity="center"
-        android:padding="16dp"
-        android:text="Tap" />
 
 </RelativeLayout>

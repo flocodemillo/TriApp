@@ -14,6 +14,7 @@ public class Patient {
     private boolean show;
     private boolean triaged;
     private static List<TriageResult> triageResultList = new ArrayList<>();
+    private TriageResult current;
 
 
     //private String birthDate; 
@@ -40,6 +41,7 @@ public class Patient {
     public String getDescription() {return this.description;}
     public Boolean getTriaged() {return this.triaged;}
     public List<TriageResult> getResults() {return triageResultList;}
+    public TriageResult getCurrentTriage() {return current;}
 
 
     public Boolean getShow() {return this.show;}
@@ -59,5 +61,6 @@ public class Patient {
         this.description = description;
     }
     public void setTriaged(Boolean triaged) {this.triaged = triaged; }
+    public void setCurrentTriage(TriageResult data) {this.current = data;}
 
 }

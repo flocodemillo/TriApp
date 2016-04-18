@@ -46,7 +46,7 @@ public class StepSampleAdapter extends AbstractStep {
         DiscriminatorsAdapter adapter = new DiscriminatorsAdapter((Manchester.getCurrentWorkFlow()).getLevel(level).getDiscriminators(),level, this.getActivity());
         rv.setAdapter(adapter);
 
-        button = (Button) v.findViewById(R.id.button);
+       /* button = (Button) v.findViewById(R.id.button);
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -54,7 +54,7 @@ public class StepSampleAdapter extends AbstractStep {
                 if (mStepper != null)
                     mStepper.getExtras().putInt("Click", i);
             }
-        });
+        });*/
 
         return v;
     }
