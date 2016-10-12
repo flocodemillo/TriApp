@@ -47,5 +47,6 @@
     <string name="title_activity_result">ResultActivity</string>
     <string name="result_list">Triajes realizados</string>
     <string name="title_activity_step_sample">StepSample</string>
+    <string name="patient_empty">Para añadir un paciente nuevo pulsa</string>
 
 </resources>

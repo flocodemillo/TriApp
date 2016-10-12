@@ -96,7 +96,7 @@ public class DiscriminatorsAdapter extends RecyclerView.Adapter<DiscriminatorsAd
                             .title("Resultado")
                             .customView(R.layout.dialog_report, true)
                             .positiveText("Guardar")
-                            .negativeText(android.R.string.cancel)
+                            .negativeText("Seguir triando")
                            .onPositive(new MaterialDialog.SingleButtonCallback() {
                                 @Override
                                 public void onClick(@NonNull MaterialDialog dialog, @NonNull DialogAction which) {

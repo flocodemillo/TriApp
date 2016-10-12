@@ -55,7 +55,7 @@ public class ResultActivity extends AppCompatActivity {
             results = Patients.getCurrentPatient().getResults();
             Log.v(TAG, "Size results: " + results.size());
 
-
+            System.out.println("Añadido nuevo resultado" + Patients.getCurrentPatient().getName());
             /*persons.add(persons2.get(0));
             persons.add(persons2.get(1));
             persons.add(persons2.get(2));*/

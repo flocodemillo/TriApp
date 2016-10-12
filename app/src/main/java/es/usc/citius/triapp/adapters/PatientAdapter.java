@@ -104,6 +104,7 @@ public class PatientAdapter extends RecyclerView.Adapter<PatientAdapter.PersonVi
                 Intent intent = new Intent(personViewHolder.myActivity,ResultActivity.class);
                 personViewHolder.myActivity.startActivity(intent);
 
+                Patients.setCurrentPatient(Patients.getPatientbyName(patients.get(i).getName()));
 
                 return true;
             }

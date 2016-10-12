@@ -13,7 +13,7 @@ public class Patient {
     private long startTime;
     private boolean show;
     private boolean triaged;
-    private static List<TriageResult> triageResultList = new ArrayList<>();
+    private List<TriageResult> triageResultList;
     private TriageResult current;
 
 
@@ -27,11 +27,15 @@ public class Patient {
         this.id = id;
         this.show = show;
         this.triaged = triaged;
+        triageResultList = new ArrayList<>();
     }
 
-    public static void addResult (TriageResult result) {
+    public void addResult(TriageResult result) {
         triageResultList.add(result);
-        System.out.println("Añadido nuevo resultado\n");
+        System.out.println("Añadido nuevo resultado" + triageResultList.size());
+        System.out.println("Añadido nuevo nombre:" + this.getName());
+
+
     }
 
     public String getName() {return this.name;}

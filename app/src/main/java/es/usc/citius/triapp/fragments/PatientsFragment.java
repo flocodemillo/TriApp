@@ -8,6 +8,8 @@ import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.ViewStub;
+import android.widget.TextView;
 
 
 import java.util.Iterator;
@@ -23,6 +25,7 @@ public class PatientsFragment extends Fragment {
 
 
     private RecyclerView rv;
+    private ViewStub emptyRV;
 
     public static PatientsFragment newInstance() {
         PatientsFragment fragment = new PatientsFragment();
@@ -51,6 +54,7 @@ public class PatientsFragment extends Fragment {
         super.onViewCreated(view, savedInstanceState);
 
         rv = (RecyclerView) view.findViewById(R.id.rv);
+        emptyRV = (ViewStub) view.findViewById(R.id.empty_view);
         LinearLayoutManager llm = new LinearLayoutManager(getActivity());
 
         rv.setLayoutManager(llm);
@@ -66,8 +70,19 @@ public class PatientsFragment extends Fragment {
             }
         }
 
+        //Si no tengo pacientes
+        if (patients.isEmpty()) {
+            rv.setVisibility(View.GONE);
+            emptyRV.setVisibility(View.VISIBLE);
+        }
+        else{
+            rv.setVisibility(View.VISIBLE);
+            emptyRV.setVisibility(View.GONE);
+        }
+
         PatientAdapter adapter = new PatientAdapter(patients);
         rv.setAdapter(adapter);
+
     }
 
     public void onResume() {
@@ -78,6 +93,14 @@ public class PatientsFragment extends Fragment {
         rv.setLayoutManager(llm);
         rv.setHasFixedSize(true);
 
+        if (Patients.getPatients().isEmpty()) {
+            rv.setVisibility(View.GONE);
+            emptyRV.setVisibility(View.VISIBLE);
+        }
+        else{
+            rv.setVisibility(View.VISIBLE);
+            emptyRV.setVisibility(View.GONE);
+        }
 
         PatientAdapter adapter = new PatientAdapter(Patients.getPatients());
 

@@ -49,6 +49,7 @@ public class TriageResult {
     public GregorianCalendar getDate() {return date;}
     private static long calculeElapsed(long currentTime) { return (currentTime - startTime)/1000;}
     public long getElapsed() {return elapsed;}
+    public Patient getPatient() {return patient;}
 
 
 
